@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Portal</title>
+    <style>
+        body { margin: 0; background-color: #000; overflow: hidden; }
+        canvas { display: block; } /* Canvas is the entire background */
+        /* Ensure the main content is hidden initially for pre-loading */
+        #main-content { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: none; z-index: 10; background: #111; color: white; text-align: center; padding-top: 100px; }
+    </style>
+</head>
+<body>
+    <canvas id="portalCanvas"></canvas>
+
+    <div id="main-content">
+        <h1>Portal Opened! Welcome.</h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
