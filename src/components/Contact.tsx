@@ -1,50 +1,60 @@
-import { useState } from 'react';
-import { Mail, MapPin, Send, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { useState } from "react";
+import {
+  Mail,
+  MapPin,
+  Send,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const validateEmail = (email: string) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: '' }));
+    setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     const newErrors = {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     };
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = "Name is required";
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!validateEmail(formData.email)) {
-      newErrors.email = 'Please enter a valid email';
+      newErrors.email = "Please enter a valid email";
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = "Message is required";
     }
 
     if (newErrors.name || newErrors.email || newErrors.message) {
@@ -52,8 +62,8 @@ const Contact = () => {
       return;
     }
 
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
+    alert("Thank you for your message! We will get back to you soon.");
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -68,14 +78,19 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">
+              Contact Information
+            </h3>
 
             <div className="space-y-6 mb-8">
               <div className="flex items-start">
                 <Mail className="w-6 h-6 text-[#00D4FF] mr-4 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-white font-semibold mb-1">Email</p>
-                  <a href="mailto:martinovation@umu.ac.in" className="text-gray-300 hover:text-[#00D4FF] transition-colors duration-300">
+                  <a
+                    href="mailto:martinovation@umu.ac.in"
+                    className="text-gray-300 hover:text-[#00D4FF] transition-colors duration-300"
+                  >
                     martinovation@umu.ac.in
                   </a>
                 </div>
@@ -86,7 +101,8 @@ const Contact = () => {
                 <div>
                   <p className="text-white font-semibold mb-1">Location</p>
                   <p className="text-gray-300">
-                    Usha Martin University<br />
+                    Usha Martin University
+                    <br />
                     Angara, Ranchi, Jharkhand 835103
                   </p>
                 </div>
@@ -111,7 +127,7 @@ const Contact = () => {
                   <Twitter className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/martinovation_techfest?igsh=cGczMm42M3hwOWxs"
                   className="w-12 h-12 rounded-full bg-[#7B2CBF]/20 flex items-center justify-center text-[#7B2CBF] hover:bg-[#7B2CBF] hover:text-white transition-all duration-300 pulse"
                   aria-label="Instagram"
                 >
@@ -129,7 +145,7 @@ const Contact = () => {
 
             <div className="mt-8 rounded-xl overflow-hidden border border-[#00D4FF]/30">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.5747238095!2d85.28829!3d23.2991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e104aa5fe15d%3A0x5e5f1a5e7c6f0e4a!2sUsha%20Martin%20University!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.485817868827!2d85.50638197492462!3d23.40681147890637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f518cbbfffffff%3A0x49668409bc317a24!2sUsha%20Martin%20University!5e0!3m2!1sen!2sin!4v1760105732799!5m2!1sen!2sin"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
@@ -142,11 +158,16 @@ const Contact = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-white mb-6">Send Us a Message</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">
+              Send Us a Message
+            </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-white font-semibold mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-white font-semibold mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -156,15 +177,20 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 bg-[#1A1A1A] border ${
-                    errors.name ? 'border-red-500' : 'border-[#00D4FF]/30'
+                    errors.name ? "border-red-500" : "border-[#00D4FF]/30"
                   } rounded-lg text-white focus:outline-none focus:border-[#00D4FF] transition-colors duration-300`}
                   placeholder="Your Name"
                 />
-                {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                )}
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-white font-semibold mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-white font-semibold mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -174,15 +200,20 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 bg-[#1A1A1A] border ${
-                    errors.email ? 'border-red-500' : 'border-[#00D4FF]/30'
+                    errors.email ? "border-red-500" : "border-[#00D4FF]/30"
                   } rounded-lg text-white focus:outline-none focus:border-[#00D4FF] transition-colors duration-300`}
                   placeholder="your.email@example.com"
                 />
-                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                )}
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-white font-semibold mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-white font-semibold mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -192,11 +223,13 @@ const Contact = () => {
                   onChange={handleChange}
                   rows={6}
                   className={`w-full px-4 py-3 bg-[#1A1A1A] border ${
-                    errors.message ? 'border-red-500' : 'border-[#00D4FF]/30'
+                    errors.message ? "border-red-500" : "border-[#00D4FF]/30"
                   } rounded-lg text-white focus:outline-none focus:border-[#00D4FF] transition-colors duration-300 resize-none`}
                   placeholder="Your message here..."
                 />
-                {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                )}
               </div>
 
               <button

@@ -1,37 +1,58 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Menu, X, Sparkles } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [logoLoadError, setLogoLoadError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Schedule', href: '#schedule' },
-    { name: 'Events', href: '#events' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Team', href: '#team' },
-    { name: 'Sponsors', href: '#sponsors' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Schedule", href: "#schedule" },
+    { name: "Events", href: "#events" },
+    { name: "Gallery", href: "#gallery" },
+    { name: "Team", href: "#team" },
+    { name: "Sponsors", href: "#sponsors" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className={`fixed w-full z-40 transition-all duration-300 ${scrolled ? 'bg-[#0A2540]/95 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
+    <nav
+      className={`fixed w-full z-40 transition-all duration-300 ${
+        scrolled
+          ? "bg-[#0A2540]/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-2">
-            <Sparkles className="w-8 h-8 text-[#00D4FF] glow-cyan" />
-            <span className="text-2xl font-bold orbitron glow-cyan">Martinovation</span>
-          </div>
+        <div className="flex items-center justify-between h-24">
+          <div className="flex items-center space-x-3 flex-shrink-0">
+  {/* Logo */}
+  {!logoLoadError ? (
+    <img
+      src="/martinovation-logo.png"
+      alt="Martinovation Logo"
+      className="h-32 w-auto md:h-40 drop-shadow-[0_0_35px_rgba(0,212,255,1)] transition-transform duration-500 hover:scale-110"
+      onError={() => setLogoLoadError(true)}
+    />
+  ) : (
+    <Sparkles className="w-12 h-12 text-[#00D4FF] glow-cyan" />
+  )}
+
+  <span className="text-3xl md:text-4xl font-bold orbitron glow-cyan">
+    Martinovation
+  </span>
+</div>
+
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-6">
@@ -53,7 +74,11 @@ const Navigation = () => {
               className="text-white hover:text-[#00D4FF] p-2"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>

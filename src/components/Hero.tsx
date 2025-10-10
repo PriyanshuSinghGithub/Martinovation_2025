@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [titleText, setTitleText] = useState('');
-  const fullTitle = 'Martinovation TechFest 2025: Genesis of Tomorrow';
+  const fullTitle = 'U.M.U. TechFest 2025: Genesis of Tomorrow';
 
   useEffect(() => {
     let index = 0;

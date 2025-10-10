@@ -61,11 +61,11 @@ const About = () => {
               <div className="text-sm uppercase tracking-wider text-gray-300">Days of Innovation</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-[#7B2CBF]/20 to-transparent rounded-xl border border-[#7B2CBF]/30">
-              <div className="text-4xl font-bold text-[#7B2CBF] mb-2">10+</div>
+              <div className="text-4xl font-bold text-[#7B2CBF] mb-2">40+</div>
               <div className="text-sm uppercase tracking-wider text-gray-300">Tech Events</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-[#FFD700]/20 to-transparent rounded-xl border border-[#FFD700]/30">
-              <div className="text-4xl font-bold text-[#FFD700] mb-2">1000+</div>
+              <div className="text-4xl font-bold text-[#FFD700] mb-2">10,000+</div>
               <div className="text-sm uppercase tracking-wider text-gray-300">Participants</div>
             </div>
           </div>
