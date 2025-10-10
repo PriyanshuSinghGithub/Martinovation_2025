@@ -35,24 +35,23 @@ const Navigation = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
-          <div className="flex items-center space-x-3 flex-shrink-0">
+          <div className="flex items-center space-x-2 flex-shrink-0">
   {/* Logo */}
   {!logoLoadError ? (
     <img
       src="/martinovation-logo.png"
       alt="Martinovation Logo"
-      className="h-32 w-auto md:h-40 drop-shadow-[0_0_35px_rgba(0,212,255,1)] transition-transform duration-500 hover:scale-110"
+      className="h-24 sm:h-32 md:h-40 w-auto drop-shadow-[0_0_35px_rgba(0,212,255,1)] transition-transform duration-500 hover:scale-110"
       onError={() => setLogoLoadError(true)}
     />
   ) : (
-    <Sparkles className="w-12 h-12 text-[#00D4FF] glow-cyan" />
+    <Sparkles className="w-10 sm:w-12 h-10 sm:h-12 text-[#00D4FF] glow-cyan" />
   )}
 
-  <span className="text-3xl md:text-4xl font-bold orbitron glow-cyan">
+  <span className="text-xl sm:text-3xl md:text-4xl font-bold orbitron glow-cyan">
     Martinovation
   </span>
 </div>
-
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-6">

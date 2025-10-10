@@ -28,7 +28,7 @@ const departments: Department[] = [
     coordinators: [{ name: 'Mayank Kumar', contact: '6202801406' }],
   },
   {
-    name: 'Logistics',
+    name: 'Logistics & Resources Infrastructures',
     head: { name: 'Himanshu Kr. Singh', contact: '8252577845' },
     coordinators: [{ name: 'Akash Singh', contact: '7739339852' }],
   },
@@ -38,7 +38,7 @@ const departments: Department[] = [
     coordinators: [{ name: 'Aryan Sinha', contact: '8084112159' }],
   },
   {
-    name: 'Discipline',
+    name: 'Discipline & Security',
     head: { name: 'Mayank Kumar', contact: '9608909340' },
     coordinators: [
       { name: 'Shivaji Singh', contact: '7633964962' },
@@ -46,12 +46,12 @@ const departments: Department[] = [
     ],
   },
   {
-    name: 'Decoration',
+    name: 'Decoration & Operator',
     head: { name: 'Md. Samir Waziullah', contact: '8252128302' },
     coordinators: [{ name: 'Ujjwal Kumar', contact: '9608302087' }],
   },
   {
-    name: 'Anchors',
+    name: 'Anchoring',
     head: { name: 'Md. Farhan Bin Hassan', contact: '7079327447' },
     coordinators: [{ name: 'Shivanjali Shudhanshu', contact: '7209483014' }],
   },
@@ -66,17 +66,17 @@ const departments: Department[] = [
     coordinators: [{ name: 'Aditya Raj', contact: '6200347839' }],
   },
   {
-    name: 'Creative',
+    name: 'Creative & Visuals',
     head: { name: 'Bibhanshu Dutta', contact: '9470943650' },
     coordinators: [],
   },
   {
-    name: 'Web Development',
+    name: 'Web Design & Development',
     head: { name: 'Vinay Kumar', contact: '9065934001' },
     coordinators: [{ name: 'Priyanshu Kr. Singh', contact: '6205133276' }],
   },
   {
-    name: 'Marketing',
+    name: 'Marketing & Media',
     head: { name: 'Ankur Anand', contact: '9263476357' },
     coordinators: [{ name: 'Anand Kr. Yadav', contact: '9390154730' }],
   },
@@ -203,10 +203,10 @@ const Team = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-[#1A1A1A] to-[#0A2540] p-8 rounded-xl border border-[#7B2CBF]/30">
+          {/* <div className="bg-gradient-to-r from-[#1A1A1A] to-[#0A2540] p-8 rounded-xl border border-[#7B2CBF]/30">
             <h4 className="text-2xl font-bold text-white mb-4">Faculty Coordinators</h4>
             <p className="text-gray-400 text-lg">To Be Announced</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
