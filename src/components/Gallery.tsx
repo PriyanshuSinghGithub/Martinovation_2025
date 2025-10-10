@@ -9,18 +9,18 @@ interface GalleryItem {
 }
 
 const galleryItems: GalleryItem[] = [
-  { type: 'image', src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80', category: 'Campus Vibes', alt: 'Campus view' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&q=80', category: 'Event Highlights', alt: 'Tech event' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80', category: 'Team Moments', alt: 'Team collaboration' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80', category: 'Event Highlights', alt: 'Hackathon' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80', category: 'Campus Vibes', alt: 'Technology lab' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80', category: 'Team Moments', alt: 'Student team' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?w=800&q=80', category: 'Event Highlights', alt: 'Competition' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80', category: 'Campus Vibes', alt: 'Students learning' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80', category: 'Team Moments', alt: 'Group discussion' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80', category: 'Event Highlights', alt: 'Presentation' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&q=80', category: 'Campus Vibes', alt: 'Innovation hub' },
-  { type: 'image', src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80', category: 'Team Moments', alt: 'Teamwork' },
+  { type: 'image', src: '/images/gallery/img1.jpg', category: 'Campus Vibes', alt: 'Campus view' },
+  { type: 'image', src: '/images/gallery/img2.jpg', category: 'Event Highlights', alt: 'Tech event' },
+  { type: 'image', src: '/images/gallery/img3.jpg', category: 'Team Moments', alt: 'Team collaboration' },
+  { type: 'image', src: '/images/gallery/img4.jpg', category: 'Event Highlights', alt: 'Hackathon' },
+  { type: 'image', src: '/images/gallery/img5.jpg', category: 'Campus Vibes', alt: 'Technology lab' },
+  { type: 'image', src: '/images/gallery/img6.jpg', category: 'Team Moments', alt: 'Student team' },
+  { type: 'image', src: '/images/gallery/img7.jpg', category: 'Event Highlights', alt: 'Competition' },
+  { type: 'image', src: '/images/gallery/img8.jpg', category: 'Campus Vibes', alt: 'Students learning' },
+  { type: 'image', src: '/images/gallery/img9.jpg', category: 'Team Moments', alt: 'Group discussion' },
+  { type: 'image', src: '/images/gallery/img10.jpg', category: 'Event Highlights', alt: 'Presentation' },
+  { type: 'image', src: '/images/gallery/img11.jpg', category: 'Campus Vibes', alt: 'Innovation hub' },
+  { type: 'image', src: '/images/gallery/img12.jpg', category: 'Team Moments', alt: 'Teamwork' },
 ];
 
 const Gallery = () => {
