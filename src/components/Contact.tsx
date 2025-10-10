@@ -91,7 +91,7 @@ const Contact = () => {
                     href="mailto:martinovation@umu.ac.in"
                     className="text-gray-300 hover:text-[#00D4FF] transition-colors duration-300"
                   >
-                    martinovation@umu.ac.in
+                    martinovation1@umu.ac.in
                   </a>
                 </div>
               </div>
