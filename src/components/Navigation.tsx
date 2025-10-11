@@ -31,24 +31,24 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="w-full ">
-        <div className="flex items-center justify-between h-24">
+      <div className="w-full px-2 sm:px-4">
+        <div className="flex items-center justify-between h-20 sm:h-24">
 
           {/* Left Section (Logo + Text) */}
-          <div className="flex items-center flex-shrink-0 pl-0 sm:pl-0">
+          <div className="flex items-center space-x-1 sm:space-x-2 flex-shrink min-w-0">
             {!logoLoadError ? (
               <img
                 src="/martinovation-logo.png"
                 alt="Martinovation Logo"
-                className="h-20 sm:h-24 md:h-28 -mr-8 w-auto transition-transform duration-500 hover:scale-110"
+                className="h-10 xs:h-12 sm:h-16 md:h-20 w-auto transition-transform duration-500 hover:scale-110"
                 onError={() => setLogoLoadError(true)}
               />
             ) : (
-              <Sparkles className="w-10 sm:w-12 h-10 sm:h-12 text-[#00D4FF]" />
+              <Sparkles className="w-6 sm:w-8 h-6 sm:h-8 text-[#00D4FF]" />
             )}
 
             {/* Futuristic Text */}
-            <span className="text-4xl sm:text-6xl md:text-7xl font-bold orbitron bg-gradient-to-r from-[#00D4FF] via-[#58F6FF] to-[#0078FF] text-transparent bg-clip-text tracking-wide whitespace-nowrap transition-all duration-500 hover:opacity-90">
+            <span className="text-lg xs:text-xl sm:text-3xl md:text-5xl font-bold orbitron bg-gradient-to-r from-[#00D4FF] via-[#58F6FF] to-[#0078FF] text-transparent bg-clip-text tracking-wide whitespace-nowrap transition-all duration-500 hover:opacity-90 truncate">
               Martinovation
             </span>
           </div>
@@ -67,7 +67,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center pr-2 sm:pr-4">
+          <div className="md:hidden flex items-center pr-2 sm:pr-4 flex-shrink-0">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-[#00D4FF] p-2"
