@@ -31,16 +31,16 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="w-full">
+      <div className="w-full ">
         <div className="flex items-center justify-between h-24">
 
           {/* Left Section (Logo + Text) */}
-          <div className="flex items-center space-x-2 flex-shrink-0 pl-2 sm:pl-4">
+          <div className="flex items-center flex-shrink-0 pl-0 sm:pl-0">
             {!logoLoadError ? (
               <img
                 src="/martinovation-logo.png"
                 alt="Martinovation Logo"
-                className="h-20 sm:h-24 md:h-28 w-auto transition-transform duration-500 hover:scale-110"
+                className="h-20 sm:h-24 md:h-28 -mr-8 w-auto transition-transform duration-500 hover:scale-110"
                 onError={() => setLogoLoadError(true)}
               />
             ) : (
