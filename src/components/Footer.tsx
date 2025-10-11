@@ -7,14 +7,15 @@ const Footer = () => {
     <footer className="bg-gradient-to-b from-[#0A2540] to-[#1A1A1A] border-t border-[#00D4FF]/30 py-10">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col items-center space-y-5">
-          {/* Replaced Sparkles with your logo, doubled size */}
+          {/* Logo with glow */}
           <img
             src="/martinovation-logo.png"
             alt="Martinovation Logo"
             className="h-40 w-auto drop-shadow-[0_0_40px_rgba(0,212,255,1)] transition-transform duration-500 hover:scale-110"
           />
 
-          <span className="text-2xl md:text-3xl font-bold orbitron text-gradient">
+          {/* Gradient title */}
+          <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#00D4FF] to-[#7B2CBF] bg-clip-text text-transparent">
             Martinovation TechFest 2025
           </span>
 
