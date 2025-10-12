@@ -73,7 +73,7 @@ const About = () => {
             events aim to bridge the gap between academic knowledge and
             practical application, encouraging participants to think critically,
             act creatively, and innovate fearlessly. Martinovation is not just a
-            celebration of technology—it is a movement that empowers students to
+            celebration of technology but it is a movement that empowers students to
             transform ideas into impactful innovations. It fosters teamwork,
             leadership, and problem-solving skills, while promoting a culture of
             learning beyond classrooms. With enthusiastic participation from
