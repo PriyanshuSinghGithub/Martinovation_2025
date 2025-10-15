@@ -161,7 +161,7 @@ const Hero = () => {
             Dive into Schedule
           </a>
           <a
-            href="#contact"
+            href="#events"
             className="px-8 py-4 border-2 border-[#FFD700] text-[#FFD700] rounded-lg font-semibold uppercase tracking-wide hover:bg-[#FFD700] hover:text-[#0A2540] transition-all duration-300"
           >
             Register Now
