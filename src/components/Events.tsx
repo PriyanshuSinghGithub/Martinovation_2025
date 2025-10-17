@@ -439,7 +439,7 @@ const allEvents: Event[] = [
     category: "Keynote",
     capacity: 500,
     includes: ["Chief guest welcome & inauguration"],
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "coding-marathon",
@@ -450,7 +450,7 @@ const allEvents: Event[] = [
     date: "March 15",
     speaker: "Judges/Mentors",
     category: "Competition",
-    registrationLink: "https://www.google.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "tech-quiz",
@@ -460,7 +460,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Tech Quiz"),
     date: "March 15",
     category: "Quiz",
-    registrationLink: "https://www.facebook.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "tech-talk",
@@ -471,7 +471,7 @@ const allEvents: Event[] = [
     date: "March 15",
     category: "Seminar",
     speaker: "Guest Speaker",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "hackathon",
@@ -493,7 +493,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Web Dev Sprint"),
     date: "March 16",
     category: "Competition",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "electronics-design",
@@ -503,7 +503,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Electronics Circuit Design"),
     date: "March 16",
     category: "Workshop",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "hardware-prototype",
@@ -513,7 +513,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Hardware Prototyping Challenge"),
     date: "March 16",
     category: "Competition",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "hack-puzzle",
@@ -523,7 +523,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Hack Puzzle"),
     date: "March 16",
     category: "Puzzle",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "general-quiz",
@@ -533,7 +533,7 @@ const allEvents: Event[] = [
     ...getEventDetails("General Quiz"),
     date: "March 16",
     category: "Quiz",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "ai-art-music",
@@ -543,7 +543,7 @@ const allEvents: Event[] = [
     ...getEventDetails("AI Art + AI Music Composition"),
     date: "March 16",
     category: "Creative",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "project-exhibition",
@@ -553,7 +553,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Project Exhibition"),
     date: "March 17",
     category: "Exhibition",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "autocad-design",
@@ -563,7 +563,7 @@ const allEvents: Event[] = [
     ...getEventDetails("AutoCAD Design"),
     date: "March 17",
     category: "Design",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "drone-race",
@@ -573,7 +573,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Drone Race"),
     date: "March 17",
     category: "Competition",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "virtual-escape",
@@ -583,7 +583,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Virtual Escape Room"),
     date: "March 17",
     category: "Fun",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "digital-fashion",
@@ -593,7 +593,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Digital Fashion Design"),
     date: "March 17",
     category: "Design",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "meme-battle",
@@ -603,7 +603,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Meme Battle"),
     date: "March 17",
     category: "Fun",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "ai-bot-challenge",
@@ -613,7 +613,7 @@ const allEvents: Event[] = [
     ...getEventDetails("AI Bot Challenge"),
     date: "March 17",
     category: "Competition",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "push-ups",
@@ -623,7 +623,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Push-Ups Challenge"),
     date: "March 17",
     category: "Fitness",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "talent-show",
@@ -633,7 +633,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Talent Show"),
     date: "March 17",
     category: "Cultural",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "bgmi-finals",
@@ -643,7 +643,7 @@ const allEvents: Event[] = [
     ...getEventDetails("BGMI Finals"),
     date: "March 18",
     category: "E-Sports",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "free-fire-finals",
@@ -653,7 +653,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Free Fire Finals"),
     date: "March 18",
     category: "E-Sports",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "open-mic",
@@ -663,7 +663,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Open Mic"),
     date: "March 18",
     category: "Cultural",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "dance-off",
@@ -673,7 +673,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Dance Off"),
     date: "March 18",
     category: "Cultural",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "photography",
@@ -683,7 +683,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Photography Contest"),
     date: "March 18",
     category: "Creative",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
 ];
 
