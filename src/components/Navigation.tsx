@@ -1,15 +1,11 @@
 // src/components/Navigation.tsx
 import { useState, useEffect } from "react";
 import { Menu, X, Sparkles } from "lucide-react";
-import { useAuth } from "../contexts/AuthContext";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [logoLoadError, setLogoLoadError] = useState(false);
-
-  // Get auth functions and user from your Auth context
-  const { user, signOut } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -31,12 +27,13 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed w-full z-40 transition-all duration-300 ${
-        scrolled ? "bg-[#0A2540]/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolled
+          ? "bg-[#0A2540]/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="w-full px-2 sm:px-4">
         <div className="flex items-center justify-between h-20 sm:h-24">
-
           {/* Left Section (Logo + Text) */}
           <div className="flex items-center space-x-1 sm:space-x-2 flex-shrink min-w-0">
             {!logoLoadError ? (
@@ -55,7 +52,7 @@ const Navigation = () => {
             </span>
           </div>
 
-          {/* Desktop Nav Links + Sign Out */}
+          {/* Desktop Nav Links */}
           <div className="hidden md:flex items-center space-x-6 pr-4">
             {navLinks.map((link) => (
               <a
@@ -66,28 +63,6 @@ const Navigation = () => {
                 {link.name}
               </a>
             ))}
-
-            {/* Sign Out button shown only when user is logged in */}
-            {user ? (
-              <button
-                onClick={async () => {
-                  try {
-                    await signOut();
-                    // optional: close mobile menu if open
-                    setIsOpen(false);
-                  } catch (err) {
-                    console.error("Sign out failed", err);
-                  }
-                }}
-                className="ml-2 px-4 py-2 rounded-lg bg-[#1A334B] text-gray-200 hover:bg-[#122635] border border-[#2A4058] text-sm font-medium transition-all"
-                title="Sign out"
-              >
-                Sign Out
-              </button>
-            ) : (
-              // If user is not logged in, show nothing (or you can show a Sign In link)
-              null
-            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -117,23 +92,6 @@ const Navigation = () => {
                 {link.name}
               </a>
             ))}
-
-            {/* Mobile sign out as a menu item */}
-            {user && (
-              <button
-                onClick={async () => {
-                  try {
-                    await signOut();
-                    setIsOpen(false);
-                  } catch (err) {
-                    console.error("Sign out failed", err);
-                  }
-                }}
-                className="w-full text-left mt-1 px-3 py-2 rounded-md bg-[#172733] text-gray-200 hover:bg-[#0f2a38] transition-all"
-              >
-                Sign Out
-              </button>
-            )}
           </div>
         </div>
       )}

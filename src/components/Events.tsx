@@ -451,7 +451,7 @@ const allEvents: Event[] = [
     date: "November 3–4, 2025",
     time: "04:00 PM (Nov 3) – 04:00 PM (Nov 4)",
     category: "Competition",
-    registrationLink: "https://unstop.com/p/bigshift-martinovation-usha-martin-university-umu-ranchi-jharkhand-1575744",
+    registrationLink: "https://forms.gle/JSe9cRPfahGXNPxw7",
   },
   {
     id: "web-dev-sprint",
@@ -463,7 +463,7 @@ const allEvents: Event[] = [
     time: "12:30 PM – 04:00 PM",
     category: "Competition",
     registrationLink:
-      "https://unstop.com/o/kKEsuHF?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Competitions",
+      "https://forms.gle/Bkvc9JB8fDzwiJCJ7",
   },
   {
     id: "robotics",
