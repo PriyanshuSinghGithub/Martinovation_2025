@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Handshake } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, Handshake } from "lucide-react";
 
 const sponsorLogos = [
-  { name: 'Tech Sponsor 1', placeholder: 'TS1' },
-  { name: 'Tech Sponsor 2', placeholder: 'TS2' },
-  { name: 'Tech Sponsor 3', placeholder: 'TS3' },
-  { name: 'Tech Sponsor 4', placeholder: 'TS4' },
-  { name: 'Tech Sponsor 5', placeholder: 'TS5' },
+  { name: "Powered By Unstop", logo: "/images/sponsor/unstop-logo.jpg" },
+  { name: "Technical Partner", logo: "/images/sponsor/gfg-logo.jpg" },
+  { name: "Quizzing Partner", logo: "/images/sponsor/codechef-logo.jpg" },
+  { name: "Tech Sponsor 4", logo: "/images/sponsor/ts4" },
+  { name: "Tech Sponsor 5", logo: "/images/sponsor/ts5" },
 ];
 
 const Sponsors = () => {
@@ -25,8 +25,8 @@ const Sponsors = () => {
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const next = () => {
@@ -34,7 +34,9 @@ const Sponsors = () => {
   };
 
   const prev = () => {
-    setCurrentIndex((prev) => (prev - 1 + sponsorLogos.length) % sponsorLogos.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + sponsorLogos.length) % sponsorLogos.length
+    );
   };
 
   useEffect(() => {
@@ -43,7 +45,10 @@ const Sponsors = () => {
   }, []);
 
   return (
-    <section id="sponsors" className="section-padding bg-gradient-to-b from-[#1A1A1A] to-[#0A2540]">
+    <section
+      id="sponsors"
+      className="section-padding bg-gradient-to-b from-[#1A1A1A] to-[#0A2540]"
+    >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 text-gradient">
           Our Sponsors
@@ -57,7 +62,9 @@ const Sponsors = () => {
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{
-                transform: `translateX(-${(currentIndex * 100) / itemsPerView}%)`,
+                transform: `translateX(-${
+                  (currentIndex * 100) / itemsPerView
+                }%)`,
               }}
             >
               {sponsorLogos.map((sponsor, index) => (
@@ -68,10 +75,15 @@ const Sponsors = () => {
                 >
                   <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0A2540] p-8 rounded-xl border-2 border-[#00D4FF]/30 hover:border-[#7B2CBF] transition-all duration-300 hover:shadow-lg hover:shadow-[#7B2CBF]/20 aspect-square flex items-center justify-center group">
                     <div className="text-center">
-                      <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#00D4FF] to-[#7B2CBF] flex items-center justify-center text-white text-4xl font-bold group-hover:scale-110 transition-transform duration-300">
-                        {sponsor.placeholder}
-                      </div>
-                      <p className="text-white font-semibold text-lg">{sponsor.name}</p>
+                      <img
+                        src={sponsor.logo}
+                        alt={sponsor.name}
+                        className="w-54 h-54 mx-auto mb-4 rounded-full object-contain p-2 group-hover:scale-110 transition-transform duration-300"
+                      />
+
+                      <p className="text-white font-semibold text-lg">
+                        {sponsor.name}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -102,7 +114,9 @@ const Sponsors = () => {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex ? 'bg-[#00D4FF] w-8' : 'bg-gray-600 hover:bg-gray-400'
+                index === currentIndex
+                  ? "bg-[#00D4FF] w-8"
+                  : "bg-gray-600 hover:bg-gray-400"
               }`}
               aria-label={`Go to sponsor ${index + 1}`}
             />
@@ -112,9 +126,12 @@ const Sponsors = () => {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-[#1A1A1A] to-[#0A2540] p-10 rounded-2xl border-2 border-[#FFD700]/50">
             <Handshake className="w-16 h-16 text-[#FFD700] mx-auto mb-6" />
-            <h3 className="text-3xl font-bold text-white mb-4">Become a Sponsor</h3>
+            <h3 className="text-3xl font-bold text-white mb-4">
+              Become a Sponsor
+            </h3>
             <p className="text-gray-300 mb-6 text-lg max-w-2xl mx-auto">
-              Partner with us to empower the next generation of innovators and gain visibility among talented students and tech enthusiasts.
+              Partner with us to empower the next generation of innovators and
+              gain visibility among talented students and tech enthusiasts.
             </p>
             <a
               href="tel:8674944887"

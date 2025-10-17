@@ -65,14 +65,20 @@ const Auth = ({ onSuccess }: AuthProps) => {
         <div className="bg-[#0A1A2A]/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-[#1A334B] overflow-hidden">
           <div className="p-8 md:p-10">
             <div className="text-center mb-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#00D4FF] to-[#7B2CBF] rounded-2xl mb-4">
-                <Sparkles className="w-8 h-8 text-white" />
-              </div>
+              <div className="flex items-center justify-center mb-6">
+  <img
+  src="/martinovation-logo.png"
+  alt="Martinovation Logo"
+  className="w-32 h-32 object-contain animate-pulse scale-125"
+/>
+
+</div>
+
               <h2 className="text-3xl font-extrabold text-white mb-2">
                 {isLogin ? 'Welcome Back' : 'Join TechFest 2025'}
               </h2>
               <p className="text-gray-400">
-                {isLogin ? 'Sign in to access your account' : 'Create an account to get started'}
+                {isLogin ? 'Sign in to access your account' : 'Note: Accept confirmation in your email to get started'}
               </p>
             </div>
 
@@ -175,7 +181,7 @@ const Auth = ({ onSuccess }: AuthProps) => {
         </div>
 
         <p className="text-center text-gray-500 text-sm mt-6">
-          Secure authentication powered by Supabase
+          Secure authentication powered by Priyanshu
         </p>
       </div>
     </div>
