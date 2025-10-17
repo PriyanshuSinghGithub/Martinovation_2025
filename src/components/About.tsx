@@ -61,27 +61,7 @@ const About = () => {
             ref={textRef}
             className="text-lg md:text-xl leading-relaxed md:leading-loose text-gray-200 text-justify"
           >
-            Martinovation Tech Fest is the annual techno-cultural extravaganza
-            of Usha Martin University, envisioned to inspire innovation,
-            creativity, and collaboration among students. The fest serves as a
-            dynamic platform where technology meets imagination, providing
-            students with the opportunity to explore ideas, showcase talent, and
-            compete in a spirit of excellence. Over the span of several days,
-            the university campus transforms into a vibrant hub of activities
-            featuring technical competitions, workshops, hackathons,
-            exhibitions, gaming events, and cultural performances. These diverse
-            events aim to bridge the gap between academic knowledge and
-            practical application, encouraging participants to think critically,
-            act creatively, and innovate fearlessly. Martinovation is not just a
-            celebration of technology but it is a movement that empowers students to
-            transform ideas into impactful innovations. It fosters teamwork,
-            leadership, and problem-solving skills, while promoting a culture of
-            learning beyond classrooms. With enthusiastic participation from
-            students across disciplines, Martinovation Tech Fest continues to
-            nurture the next generation of innovators, creators, and
-            changemakers, setting new benchmarks in creativity and excellence
-            each year. Join us in this journey where innovation begins, ideas
-            evolve, and creativity takes center stage.
+            Martinovation Tech Fest is Usha Martin University’s annual techno-cultural celebration that blends innovation, creativity, and collaboration. The fest transforms the campus into a vibrant hub of hackathons, workshops, competitions, exhibitions, gaming, and cultural showcases. It empowers students to turn ideas into impactful innovations, fostering teamwork, leadership, and real-world problem-solving. Martinovation is where imagination meets technology but inspiring the next generation of innovators and changemakers.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
