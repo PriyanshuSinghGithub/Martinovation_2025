@@ -45,238 +45,202 @@ interface Event {
 
 const getEventDetails = (title: string) => {
   const brief: Record<string, any> = {
-    Hackathon: {
+    "Hackathon – BitShift": {
       description:
-        "A 36-hour coding competition where teams develop innovative software solutions or apps based on a given theme.",
-      long: "A 36-hour coding competition where teams develop innovative software solutions or apps based on a given theme. Code, collaborate, and create the future with your team. Participant Requirements: Laptop, IDEs installed, basic knowledge of programming. The organizer provides internet, a power supply, workspace, mentors, refreshments, and judging criteria.",
-      fee: "₹399",
-      prize: "₹60,000",
+        "A 24-hour coding competition where teams develop innovative software solutions based on a theme.",
+      long: "A 24-hour hackathon (BitShift). Teams of 2-4 build software solutions around a theme. Participant Requirements: Laptop, IDEs installed. Organizer provides internet, power, workspace, mentors, refreshments, and judging. Prize pool ₹40,000 (1st ₹20,000, 2nd ₹12,000, 3rd ₹8,000). Entry fee: ₹500 per team. Slot: 200 teams.",
+      fee: "₹500 / team",
+      prize: "₹40,000",
       slot: 200,
       team: "2-4",
-      includes: ["Prize pool ₹60,000", "Internet & Power Supply", "Mentorship"],
+      includes: ["Prize pool ₹40,000", "Internet & Power", "Mentorship"],
     },
-    "Coding Marathon": {
+    "Coding Marathon – FutureScript": {
       description:
-        "Participants solve coding problems under time constraints; individual or team-based.",
-      long: "Participants solve coding problems under time constraints; individual or team-based. Participant Requirements: Laptop with coding environment, basic algorithm knowledge. Organizer Provides: Problem sets, online IDE access, timers, judges.",
+        "Participants solve timed coding problems (individual or duo).",
+      long: "Coding Marathon – FutureScript: intense problem-solving in fixed time. Participant Requirements: Laptop, coding environment. Organizer provides problem sets, timers, judges, and certificates/medals.",
       fee: "Free",
-      prize: "N/A",
-      slot: "Open",
-      team: "Duo",
-      includes: ["Online IDE access", "Problem sets", "Leaderboard access"],
-    },
-    "Tech Quiz": {
-      description:
-        "Teams compete in a quiz focused on technology, gadgets, AI, coding, and general tech knowledge.",
-      long: "Teams compete in a quiz focused on technology, gadgets, AI, coding, and general tech knowledge. Participant Requirements: None. The organizer provides quiz questions, a buzzer system, a projector, a scoreboard, and a quizmaster.",
-      fee: "₹99",
-      prize: "₹10,000",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "2",
-      includes: ["Prize pool ₹10,000", "Buzzer system", "Scoreboard"],
+      includes: ["Problem sets", "Leaderboard", "Certificates"],
     },
-    "General Quiz": {
+    "Tech Quiz – TechQuest": {
       description:
-        "A quiz covering general knowledge, current affairs, science, and entertainment.",
-      long: "A quiz covering general knowledge, current affairs, science, and entertainment. Participant Requirements: None. Organizer Provides: Quizmaster, projector, buzzers, questions, prizes.",
+        "Teams compete on technology, gadgets, AI, and coding knowledge.",
+      long: "Tech Quiz – TechQuest: buzzer rounds, MCQs, and rapid-fire focused on tech & current trends. Organizer provides buzzer system, projector, scoreboard, and prizes.",
       fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Prizes for top teams",
+      slot: "Open",
+      team: "2",
+      includes: ["Buzzer system", "Scoreboard", "Prizes"],
+    },
+    "General Quiz – MindForge": {
+      description:
+        "Quiz across general knowledge, current affairs, science, and entertainment.",
+      long: "General Quiz – MindForge: rounds covering general knowledge. Organizer provides quizmaster, scoreboard, buzzers, and prizes.",
+      fee: "Free",
+      prize: "Certificates & Medals",
+      slot: "Open",
+      team: "2",
+      includes: ["Quizmaster", "Projector", "Certificates"],
+    },
+    Robotics: {
+      description: "Teams design and program robots for tasks/challenges.",
+      long: "Robotics – Rise of Machines: teams bring robots to navigate tasks. Organizer provides arena, power, safety barriers, tools, and judges. Participant Requirements: pre-built robots, electronics and programming knowledge.",
+      fee: "Free",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Teams",
-      includes: ["Certificate & Medal", "Quizmaster and Buzzers"],
+      includes: ["Arena & safety barriers", "Judges & tools"],
     },
-    "Electronics Circuit Design": {
-      description:
-        "Participants design and test functional electronic circuits to solve given challenges.",
-      long: "Participants design and test functional electronic circuits to solve given challenges. Participant Requirements: Knowledge of electronics and basic components (optional). The organizer provides components (resistors, LEDs, ICs, wires, and breadboards), a power supply, and workspace.",
+    "Drone Race – SkyNova": {
+      description: "Race drones through an obstacle course.",
+      long: "Drone Race – SkyNova: pilots navigate drones through timed obstacles. Participant Requirements: own or pre-approved drone. Organizer provides obstacle setup, chargers, judges, and safety.",
       fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "₹5,000 (1st ₹3,000, 2nd ₹2,000, 3rd ₹1,000)",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Components & Tools Provided"],
+      includes: ["Obstacle course access", "Power stations", "Judges"],
     },
-    "Drone Race": {
-      description: "Teams/individuals race drones through an obstacle course.",
-      long: "Teams/individuals race drones through an obstacle course. Participant Requirements: Own drone or pre-approved drones. The organizer provides obstacle course setup, safety barriers, judges, and power charging stations.",
-      fee: "Free",
-      prize: "₹5,000",
-      slot: "Open",
-      team: "Individual/Teams",
-      includes: [
-        "Prize pool ₹5,000",
-        "Obstacle course access",
-        "Power charging stations",
-      ],
-    },
-    "Hack Puzzle": {
+    "Hack Puzzle – CodeCipher": {
       description:
-        "Teams solve logical, programming, and cybersecurity puzzles in limited time.",
-      long: "Teams solve logical, programming, and cybersecurity puzzles in limited time. Participant Requirements: Laptop, basic programming & logic knowledge. Organizer Provides: Puzzles, access to software/tools, mentors, and a scoreboard.",
+        "Teams solve programming, logic & cybersecurity puzzles under time pressure.",
+      long: "Hack Puzzle – CodeCipher: timed puzzle-solving. Participant Requirements: laptop, basic programming & logic. Organizer provides puzzles, mentors, and scoreboard.",
       fee: "Free",
-      prize: "Certificate + Medal",
-      slot: "Open",
-      team: "Teams",
-      includes: ["Certificate & Medal", "Puzzles & Software Access"],
-    },
-    "Meme Battle": {
-      description:
-        "Participants create funny, tech-related, or campus-themed memes under time constraints.",
-      long: "Participants create funny, tech-related, or campus-themed memes under time constraints. Participant Requirements: Laptop or phone with meme creation tools. Organizer Provides: Theme, projector for live display, judges, and internet.",
-      fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Theme Provided"],
+      includes: ["Puzzles & mentors", "Scoreboard"],
     },
-    "Photography Contest": {
-      description: "Participants click photos based on pre-decided themes.",
-      long: "Participants click photos based on pre-decided themes. Participant Requirements: Camera or smartphone. Organizer Provides: Theme, submission portal, display area, judges.",
+    "Meme Battle – MetaMeme": {
+      description:
+        "Create tech/campus-themed memes under time constraints.",
+      long: "Meme Battle – MetaMeme: live meme creation and display. Participant Requirements: laptop/phone. Organizer provides theme, projection, internet, and judges.",
       fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Submission Portal Access"],
+      includes: ["Theme & projector", "Judges & internet"],
     },
-    "Talent Show": {
-      description: "Open stage for music, dance, magic, or other talents.",
-      long: "Open stage for music, dance, magic, or other talents. Participant Requirements: Props, instruments, and performance preparations. The organizer provides a stage, sound system, judges, lights, and mics.",
+    "Short Film Challenge – Frame the Future": {
+      description: "Create short films based on a theme.",
+      long: "Short Film Challenge – Frame the Future: storytelling through short films. Participant Requirements: camera or smartphone. Organizer provides submission portal, judges, and display.",
       fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Certificates & Medals",
+      slot: "Open",
+      team: "Individual",
+      includes: ["Submission portal", "Judges", "Display"],
+    },
+    "Talent Show – Eclipsera": {
+      description: "Open stage for music, dance, magic, and other talents.",
+      long: "Talent Show – Eclipsera: participants perform live onstage. Organizer provides stage, sound, judges, and lights.",
+      fee: "Free",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Individual/Groups",
-      includes: ["Certificate & Medal", "Stage & Sound System"],
+      includes: ["Stage & sound system", "Judges"],
     },
-    "Tech Talk & Seminar": {
+    "Project Exhibition – ProtoVerse": {
       description:
-        "Expert sessions on technology, innovation, startups, and AI.",
-      long: "Expert sessions on technology, innovation, startups, and AI. Participant Requirements: None (audience). The organizer provides a speaker, projector, mic, seating, and refreshments.",
-      fee: "Free",
-      prize: "N/A",
-      slot: "Open",
-      team: "Audience",
-      includes: ["Guest Speaker Session", "Refreshments"],
-    },
-    "Project Exhibition": {
-      description:
-        "Participants showcase their tech, robotics, or software projects.",
-      long: "Participants showcase their tech, robotics, or software projects. Participant Requirements: Completed project setup, poster, and presentation. The organizer provides display tables, electricity, judges, and labels/signage.",
+        "Participants showcase tech, robotics, and software projects.",
+      long: "Project Exhibition – ProtoVerse: display prototypes. Organizer provides display tables, electricity, and judges. Prize pool ₹10,000.",
       fee: "Free",
       prize: "₹10,000",
-      slot: "Selected",
+      slot: "Open",
       team: "2-4",
-      includes: ["Prize pool ₹10,000", "Display tables", "Electricity"],
+      includes: ["Display tables", "Electricity", "Judges"],
     },
-    "BGMI Finals": {
-      description: "Battle Royale gaming tournament in BGMI (PUBG Mobile).",
-      long: "Battle Royale gaming tournament in BGMI (PUBG Mobile). Participant Requirements: Smartphones with BGMI installed. The organizer provides game lobby setup, rules, a live screen/projector for spectators, and internet.",
-      fee: "Free",
-      prize: "N/A",
-      slot: "Selected",
-      team: "Teams",
-      includes: ["Live Streaming Setup", "Lobby Access", "Internet"],
+    "BGMI Tournament – BattleVerse - BGMI": {
+      description: "BGMI Battle Royale tournament.",
+      long: "BGMI Tournament – BattleVerse: competitive PUBG Mobile (BGMI) tournament. Participant Requirements: smartphone with BGMI. Organizer provides lobby setup, projector, internet, and prizes. Entry fee ₹149 per team; slots 200 teams.",
+      fee: "₹149 / team",
+      prize: "₹30,000",
+      slot: 200,
+      team: "4",
+      includes: ["Lobby & streaming", "Prizes"],
     },
-    "Free Fire Finals": {
-      description: "Free Fire Max competitive gaming tournament.",
-      long: "Free Fire Max competitive gaming tournament. Participant Requirements: Smartphone with FF Max installed. The organizer provides lobby creation, a host, a projector/live streaming, rules & scoring, and internet.",
-      fee: "Free",
-      prize: "N/A",
-      slot: "Selected",
-      team: "Teams",
-      includes: ["Live Streaming Setup", "Lobby Access", "Internet"],
+    "Valorant Tournament": {
+      description: "Competitive PC shooter tournament (Valorant).",
+      long: "Valorant Tournament: competitive PC shooter matches. Participant Requirements: PC with Valorant, peripherals. Organizer provides PCs (if needed), internet, admin, and projector. Entry fee ₹149 per team; slots 200 teams.",
+      fee: "₹149 / team",
+      prize: "₹20,000",
+      slot: 200,
+      team: "4",
+      includes: ["PCs & internet", "Admin & projector"],
     },
-    "Open Mic": {
-      description:
-        "Participants perform music, poetry, comedy, or spoken word live.",
-      long: "Participants perform music, poetry, comedy, or spoken word live. Participant Requirements: Prepared performance, mic/instrument if needed. The organizer provides a stage, sound system, lights, seating, and judges (optional).",
+    "AutoCAD Design – FutureFrame": {
+      description: "Design 2D/3D models in AutoCAD.",
+      long: "AutoCAD Design – FutureFrame: participants design models using AutoCAD. Participant Requirements: laptop with AutoCAD. Organizer provides theme, projector, and judges.",
       fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Stage & Sound System"],
+      includes: ["Theme & judges", "Projector"],
     },
-    "Dance Off": {
-      description: "Competitive dance battle in groups or solo.",
-      long: "Competitive dance battle in groups or solo. Participant Requirements: Performance attire, music files. The organizer provides a stage, sound system, judges, and lights.",
-      fee: "Free",
-      prize: "Certificate + Medal",
-      slot: "Open",
-      team: "Individual/Groups",
-      includes: ["Certificate & Medal", "Stage & Sound System"],
-    },
-    "Web Dev Sprint": {
+    "Web Development Sprint – WebVerse": {
       description:
         "Build a functional website in limited time based on a theme.",
-      long: "Build a functional website in limited time based on a theme. Participant Requirements: Laptop, code editor, internet. Organizer Provides: Theme, internet, power, mentors, judges.",
+      long: "Web Development Sprint – WebVerse: build a website within the sprint time. Participant Requirements: laptop, editor, internet. Organizer provides mentors, internet, power, and prizes.",
       fee: "₹199",
       prize: "₹10,000",
-      slot: "Selected",
+      slot: 100,
       team: "2-4",
-      includes: ["Prize pool ₹10,000", "Theme provided", "Mentorship"],
+      includes: ["Theme", "Mentorship", "Prize pool"],
     },
-    "Hardware Prototyping Challenge": {
-      description: "Build functional hardware prototypes for given problems.",
-      long: "Build functional hardware prototypes for given problems. Participant Requirements: Basic components, tools, and kits. Organizer Provides: Extra components, workspace, power supply, mentors.",
-      fee: "Free",
-      prize: "Certificate + Medal",
-      slot: "Open",
-      team: "Teams",
-      includes: ["Certificate & Medal", "Extra components provided"],
-    },
-    "AutoCAD Design": {
-      description: "Design 3D or 2D models in AutoCAD based on challenges.",
-      long: "Design 3D or 2D models in AutoCAD based on challenges. Participant Requirements: Laptop with AutoCAD installed. The organizer provides the theme, judging criteria, workspace, and projector.",
-      fee: "Free",
-      prize: "Certificate + Medal",
+    "Workshops – InnovateX": {
+      description: "Hands-on sessions on coding, robotics, AI or design.",
+      long: "Workshops – InnovateX: practical instructor-led sessions across multiple days. Organizer provides instructors, materials, and workspace.",
+      fee: "Free (registration required)",
+      prize: "N/A",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Theme provided"],
+      includes: ["Instructor & materials", "Projector & workspace"],
     },
-    "Virtual Escape Room": {
-      description:
-        'Teams solve digital puzzles to "escape" a virtual scenario.',
-      long: 'Teams solve digital puzzles to "escape" a virtual scenario. Participant Requirements: Laptop, internet, problem-solving skills. Organizer Provides: Virtual escape platform, instructions, mentors, timer, judges.',
+    "AI Art Competition – VisionSynth": {
+      description: "Create digital artwork using AI tools.",
+      long: "AI Art Competition – VisionSynth: participants create AI-generated art. Participant Requirements: laptop/phone with AI tools. Organizer provides theme, internet, projector, and judges.",
       fee: "Free",
-      prize: "Certificate + Medal",
-      slot: "Open",
-      team: "Teams",
-      includes: ["Certificate & Medal", "Virtual platform access"],
-    },
-    "Digital Fashion Design": {
-      description:
-        "Create fashion designs using digital tools (CLO3D, Marvelous Designer).",
-      long: "Create fashion designs using digital tools (CLO3D, Marvelous Designer). Participant Requirements: Laptop, design software. Organizer Provides: Theme, mentors, projector for display, judges.",
-      fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Theme provided"],
+      includes: ["Theme & internet", "Projector & judges"],
     },
-    "AI Bot Challenge": {
-      description: "Build an AI-powered chatbot or assistant to perform tasks.",
-      long: "Build an AI-powered chatbot or assistant to perform tasks. Participant Requirements: Laptop, programming tools, AI frameworks. Organizer Provides: Guidelines, mentors, internet, judges.",
+    "AI Music Composition – EchoMind": {
+      description: "Compose music using AI tools and workflows.",
+      long: "AI Music Composition – EchoMind: participants use AI to compose music pieces. Organizer provides internet, mentors, judging criteria, and projector/audio setup.",
       fee: "Free",
-      prize: "Certificate + Medal",
-      slot: "Open",
-      team: "Teams",
-      includes: ["Certificate & Medal", "Guidelines provided"],
-    },
-    "Push-Ups Challenge": {
-      description: "Fitness-based challenge testing strength & endurance.",
-      long: "Fitness-based challenge testing strength & endurance. Participant Requirements: Sports attire, fitness readiness. Organizer Provides: Space, mats, stopwatch, judges, and water.",
-      fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Space & equipment provided"],
+      includes: ["Theme & mentors", "Audio setup & judges"],
     },
-    "AI Art + AI Music Composition": {
-      description: "Create digital artwork or compose music using AI tools.",
-      long: "Create digital artwork or compose music using AI tools. AI Art Requirements: Laptop or phone, AI art tools. AI Music Requirements: Laptop, AI music software. Organizer Provides: Theme, internet, projector, judges.",
+    Cosplay: {
+      description: "Theme-based cosplay showcasing character design.",
+      long: "Cosplay – ChronoVerse: themed dressing & performance. Organizer provides platform, judges, and timing.",
       fee: "Free",
-      prize: "Certificate + Medal",
+      prize: "Certificates & Medals",
       slot: "Open",
       team: "Individual",
-      includes: ["Certificate & Medal", "Internet and Projector Access"],
+      includes: ["Stage & judges", "Timer & mentors"],
+    },
+    "Photography – Pixel Rebirth": {
+      description: "Photography contest capturing campus areas.",
+      long: "Photography – Pixel Rebirth: high-quality campus photography challenge. Organizer provides categories, mentors, and judges.",
+      fee: "Free",
+      prize: "Certificates & Medals",
+      slot: "Open",
+      team: "Individual",
+      includes: ["Mentors & judges", "Display area"],
+    },
+    "Push-Ups Challenge – Power Surge": {
+      description: "Fitness challenge testing strength & endurance.",
+      long: "Push-Ups Challenge – Power Surge: endurance test with judges and awards.",
+      fee: "Free",
+      prize: "Certificates & Medals",
+      slot: "Open",
+      team: "Individual",
+      includes: ["Mats & judges", "Stopwatch"],
     },
   };
 
@@ -286,126 +250,125 @@ const getEventDetails = (title: string) => {
       venue: "Auditorium (Above central mess)",
       day: "Day 1",
     },
-    "Coding Marathon": {
-      time: "10:00–12:00",
+    "Coding Marathon – FutureScript": {
+      time: "10:00 – 12:00",
       venue: "Auditorium (Above central mess)",
       day: "Day 1",
     },
-    "Tech Quiz": {
-      time: "12:30–2:00",
+    "Tech Quiz – TechQuest": {
+      time: "12:30 – 14:00",
       venue: "Auditorium (Above central mess)",
       day: "Day 1",
     },
     "Tech Talk & Seminar": {
-      time: "2:00 – 3:30",
+      time: "14:00 – 15:30",
       venue: "Auditorium (Above central mess)",
       day: "Day 1",
     },
-    "Hackathon Kickoff": {
-      time: "10:00 - 36 hr",
+    "Hackathon – BitShift": {
+      time: "16:00 – 24:00 (24 hr)",
       venue: "Auditorium (Above central mess)",
-      day: "Day 2",
+      day: "Day 1",
     },
-    "Web Dev Sprint": {
-      time: "10:00–12:00",
+    "Web Development Sprint – WebVerse": {
+      time: "12:30 – 16:30",
+      venue: "Baitarni 5th floor lab",
+      day: "Day 1",
+    },
+    "Robotics": {
+      time: "10:30 – 13:00",
+      venue: "Volleyball court",
+      day: "Day 1",
+    },
+    "General Quiz – MindForge": {
+      time: "13:00 – 15:00",
       venue: "Baitarni 2nd floor seminar hall",
       day: "Day 2",
     },
-    "Electronics Circuit Design": {
-      time: "10:00–12:00",
-      venue: "Electrical lab—baitarni 2nd floor",
-      day: "Day 2",
-    },
-    "Hardware Prototyping Challenge": {
-      time: "12:30-2:00",
-      venue: "Electrical lab—baitarni 2nd floor",
-      day: "Day 2",
-    },
-    "Hack Puzzle": {
-      time: "12:30–2:00",
+    "Hack Puzzle – CodeCipher": {
+      time: "12:30 – 14:00",
       venue: "Baitarni 2nd floor - 302",
       day: "Day 2",
     },
-    "General Quiz": {
-      time: "1:00 - 3:00",
-      venue: "Baitarni 2nd floor seminar hall",
-      day: "Day 2",
-    },
-    "AI Art & Music Comp.": {
-      time: "2:00 – 4:00",
+    "AI Art Competition – VisionSynth": {
+      time: "14:00 – 16:00",
       venue: "Volleyball court ground (exhibition zone)",
       day: "Day 2",
     },
-    "Project Exhibition": {
-      time: "10:00–12:00",
+    "AI Music Composition – EchoMind": {
+      time: "14:00 – 16:00",
       venue: "Volleyball court ground (exhibition zone)",
+      day: "Day 2",
+    },
+    "Short Film Challenge – Frame the Future": {
+      time: "12:30 – 14:00",
+      venue: "Campus (submission/display area)",
+      day: "Day 2",
+    },
+    "Project Exhibition – ProtoVerse": {
+      time: "10:00 – 12:00",
+      venue: "Volleyball court",
       day: "Day 3",
     },
-    "AutoCAD Design": {
-      time: "10:00–12:00",
-      venue: "Baitarni - mechanical lab",
-      day: "Day 3",
-    },
-    "Drone Race": {
+    "Drone Race – SkyNova": {
       time: "10:30 – 12:00",
       venue: "Volleyball court ground (exhibition zone)",
       day: "Day 3",
     },
-    "Virtual Escape Room": {
-      time: "12:30 - 1:30",
-      venue: "Baitarni 2nd floor seminar hall",
+    "Meme Battle – MetaMeme": {
+      time: "12:30 – 14:00",
+      venue: "Campus / Online",
       day: "Day 3",
     },
-    "Digital Fashion Design": {
-      time: "12:30 – 2:00",
-      venue: "Volleyball court - exhibition zone",
+    "Cosplay": {
+      time: "12:30 – 14:00",
+      venue: "Open Ground",
       day: "Day 3",
     },
-    "Meme Battle": {
-      time: "12:30 – 2:00",
-      venue: "Online Submission",
+    "Talent Show – Eclipsera": {
+      time: "14:00 – 15:30",
+      venue: "Baitarni reception",
       day: "Day 3",
     },
-    "AI Bot Challenge": {
-      time: "12:30–2:00",
+    "AI Bot Challenge – NeuraWars": {
+      time: "12:30 – 14:00",
       venue: "Volleyball court—Exhibition Zone",
       day: "Day 3",
     },
-    "Push-Ups Challenge": {
-      time: "2:00 – 3:30",
+    "Push-Ups Challenge – Power Surge": {
+      time: "14:00 – 15:30",
       venue: "Baitarni reception",
       day: "Day 3",
     },
-    "Talent Show": {
-      time: "2:00 – 3:30",
-      venue: "Baitarni reception",
-      day: "Day 3",
-    },
-    "BGMI Finals": {
-      time: "10:00–2:00",
+    "BGMI Tournament – BattleVerse - BGMI": {
+      time: "10:00 – 14:00",
       venue: "Baitarni 2nd floor - seminar hall",
       day: "Day 4",
     },
-    "Free Fire Finals": {
-      time: "11:00 - 3:00",
-      venue: "Auditorium (Above central mess)",
+    "Valorant Tournament": {
+      time: "10:00 – 13:00",
+      venue: "Baitarni 5th floor lab",
       day: "Day 4",
     },
-    "Open Mic": {
-      time: "12:30 – 2:00",
-      venue: "Baitarni reception",
+    "Photography – Pixel Rebirth": {
+      time: "10:00 – 14:00",
+      venue: "Campus",
       day: "Day 4",
     },
-    "Dance Off": { time: "2:00 – 3:30", venue: "Dassam front", day: "Day 4" },
-    "Photography Contest": {
-      time: "10:00 - 2:00",
-      venue: "Volleyball court - exhibition zone",
-      day: "Day 4",
+    "AutoCAD Design – FutureFrame": {
+      time: "10:00 – 12:00",
+      venue: "Baitarni - mechanical lab",
+      day: "Day 3",
+    },
+    "Workshops – InnovateX": {
+      time: "Everyday (check schedule)",
+      venue: "Dassam G8",
+      day: "All Days",
     },
   };
 
   const scheduleEntry = schedule[title];
-  const briefEntry = brief[title] || {};
+  const briefEntry = brief[title] || brief[title.replace(/ *–.*$/, "")] || {};
 
   return {
     time: scheduleEntry?.time || "TBA",
@@ -434,31 +397,35 @@ const allEvents: Event[] = [
     icon: <Megaphone className="w-12 h-12" />,
     color: "#00D4FF",
     ...getEventDetails("Opening Ceremony"),
-    date: "March 15",
+    date: "November 3, 2025",
+    time: "09:30 AM – 10:00 AM",
     speaker: "Chief Guest",
     category: "Keynote",
     capacity: 500,
     includes: ["Chief guest welcome & inauguration"],
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink:
+      "https://www.umutechfest.co.in/#events",
   },
   {
     id: "coding-marathon",
-    title: "Coding Marathon",
+    title: "Coding Marathon – FutureScript",
     icon: <Code className="w-12 h-12" />,
     color: "#7B2CBF",
-    ...getEventDetails("Coding Marathon"),
-    date: "March 15",
-    speaker: "Judges/Mentors",
+    ...getEventDetails("Coding Marathon – FutureScript"),
+    date: "November 3, 2025",
+    time: "10:15 AM – 12:30 PM",
     category: "Competition",
-    registrationLink: "- https://forms.gle/pHa9WXfHAP997Tzi6",
+    speaker: "Judges/Mentors",
+    registrationLink: "https://forms.gle/pHa9WXfHAP997Tzi6",
   },
   {
     id: "tech-quiz",
-    title: "Tech Quiz",
+    title: "Tech Quiz – TechQuest",
     icon: <Brain className="w-12 h-12" />,
     color: "#00FF7F",
-    ...getEventDetails("Tech Quiz"),
-    date: "March 15",
+    ...getEventDetails("Tech Quiz – TechQuest"),
+    date: "November 3, 2025",
+    time: "01:00 PM – 02:30 PM",
     category: "Quiz",
     registrationLink: "https://forms.gle/62KSrgAU9Fm9V7mt7",
   },
@@ -468,222 +435,222 @@ const allEvents: Event[] = [
     icon: <Presentation className="w-12 h-12" />,
     color: "#00D4FF",
     ...getEventDetails("Tech Talk & Seminar"),
-    date: "March 15",
+    date: "November 3, 2025",
+    time: "03:00 PM – 04:30 PM",
     category: "Seminar",
     speaker: "Guest Speaker",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink:
+      "https://www.umutechfest.co.in/#events",
   },
   {
     id: "hackathon",
-    title: "Hackathon Kickoff",
+    title: "Hackathon – BitShift",
     icon: <Code className="w-12 h-12" />,
     color: "#FF4500",
-    ...getEventDetails("Hackathon"),
-    date: "March 16",
+    ...getEventDetails("Hackathon – BitShift"),
+    date: "November 3–4, 2025",
+    time: "04:00 PM (Nov 3) – 04:00 PM (Nov 4)",
     category: "Competition",
-    description:
-      "36-hour coding competition where teams develop innovative software solutions or apps.",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://unstop.com/p/bigshift-martinovation-usha-martin-university-umu-ranchi-jharkhand-1575744",
   },
   {
     id: "web-dev-sprint",
-    title: "Web Dev Sprint",
+    title: "Web Development Sprint – WebVerse",
     icon: <Code className="w-12 h-12" />,
     color: "#00D4FF",
-    ...getEventDetails("Web Dev Sprint"),
-    date: "March 16",
+    ...getEventDetails("Web Development Sprint – WebVerse"),
+    date: "November 3, 2025",
+    time: "12:30 PM – 04:00 PM",
     category: "Competition",
-    registrationLink: "https://unstop.com/o/kKEsuHF?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Competitions",
+    registrationLink:
+      "https://unstop.com/o/kKEsuHF?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Competitions",
   },
   {
-    id: "electronics-design",
-    title: "Electronics Circuit Design",
+    id: "robotics",
+    title: "Robotics – Rise of Machines",
     icon: <FlaskConical className="w-12 h-12" />,
     color: "#7B2CBF",
-    ...getEventDetails("Electronics Circuit Design"),
-    date: "March 16",
-    category: "Workshop",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
-  },
-  {
-    id: "hardware-prototype",
-    title: "Hardware Prototyping Challenge",
-    icon: <FlaskConical className="w-12 h-12" />,
-    color: "#FFD700",
-    ...getEventDetails("Hardware Prototyping Challenge"),
-    date: "March 16",
+    ...getEventDetails("Robotics"),
+    date: "November 3, 2025",
+    time: "10:30 AM – 01:00 PM",
     category: "Competition",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/tTFrYFJyckqdrAiQ9",
   },
   {
     id: "hack-puzzle",
-    title: "Hack Puzzle",
+    title: "Hack Puzzle – CodeCipher",
     icon: <Puzzle className="w-12 h-12" />,
     color: "#FF69B4",
-    ...getEventDetails("Hack Puzzle"),
-    date: "March 16",
+    ...getEventDetails("Hack Puzzle – CodeCipher"),
+    date: "November 4, 2025",
+    time: "12:00 PM – 01:30 PM",
     category: "Puzzle",
     registrationLink: "https://forms.gle/i8bbBaSDkXv6ZoV67",
   },
   {
     id: "general-quiz",
-    title: "General Quiz",
+    title: "General Quiz – MindForge",
     icon: <Brain className="w-12 h-12" />,
     color: "#00FF7F",
-    ...getEventDetails("General Quiz"),
-    date: "March 16",
+    ...getEventDetails("General Quiz – MindForge"),
+    date: "November 4, 2025",
+    time: "02:00 PM – 03:30 PM",
     category: "Quiz",
     registrationLink: "https://forms.gle/zYWT7J8LW27yVLkS6",
   },
   {
-    id: "ai-art-music",
-    title: "AI Art & Music Comp.",
-    icon: <Music className="w-12 h-12" />,
+    id: "ai-art",
+    title: "AI Art Competition – VisionSynth",
+    icon: <Paintbrush className="w-12 h-12" />,
     color: "#FF4500",
-    ...getEventDetails("AI Art + AI Music Composition"),
-    date: "March 16",
+    ...getEventDetails("AI Art Competition – VisionSynth"),
+    date: "November 4, 2025",
+    time: "03:30 PM – 05:00 PM",
     category: "Creative",
     registrationLink: "https://forms.gle/XLiBnC9w3xXuJLVo7",
   },
   {
+    id: "ai-music",
+    title: "AI Music Composition – EchoMind",
+    icon: <Music className="w-12 h-12" />,
+    color: "#FFD700",
+    ...getEventDetails("AI Music Composition – EchoMind"),
+    date: "November 4, 2025",
+    time: "03:30 PM – 05:00 PM",
+    category: "Creative",
+    registrationLink: "https://forms.gle/B8CMkySxLvTbQUui7",
+  },
+  {
+    id: "short-film",
+    title: "Short Film Challenge – Frame the Future",
+    icon: <Tv className="w-12 h-12" />,
+    color: "#00D4FF",
+    ...getEventDetails("Short Film Challenge – Frame the Future"),
+    date: "November 4, 2025",
+    time: "11:00 AM – 01:00 PM",
+    category: "Creative",
+    registrationLink: "https://forms.gle/oaD2DHZmoEofTgAW9",
+  },
+  {
     id: "project-exhibition",
-    title: "Project Exhibition",
+    title: "Project Exhibition – ProtoVerse",
     icon: <Presentation className="w-12 h-12" />,
     color: "#FFD700",
-    ...getEventDetails("Project Exhibition"),
-    date: "March 17",
+    ...getEventDetails("Project Exhibition – ProtoVerse"),
+    date: "November 5, 2025",
+    time: "10:00 AM – 12:00 PM",
     category: "Exhibition",
     registrationLink: "https://forms.gle/miKbJ7H8scnhaHiF8",
   },
   {
     id: "autocad-design",
-    title: "AutoCAD Design",
+    title: "AutoCAD Design – FutureFrame",
     icon: <PenTool className="w-12 h-12" />,
     color: "#00D4FF",
-    ...getEventDetails("AutoCAD Design"),
-    date: "March 17",
+    ...getEventDetails("AutoCAD Design – FutureFrame"),
+    date: "November 5, 2025",
+    time: "01:00 PM – 02:30 PM",
     category: "Design",
     registrationLink: "https://forms.gle/KvU8HjocZHGVSZD2A",
   },
   {
     id: "drone-race",
-    title: "Drone Race",
+    title: "Drone Race – SkyNova",
     icon: <Plane className="w-12 h-12" />,
     color: "#7B2CBF",
-    ...getEventDetails("Drone Race"),
-    date: "March 17",
+    ...getEventDetails("Drone Race – SkyNova"),
+    date: "November 5, 2025",
+    time: "02:30 PM – 04:00 PM",
     category: "Competition",
     registrationLink: "https://forms.gle/Ea4eXJvvf3UHP6oA8",
   },
   {
-    id: "virtual-escape",
-    title: "Virtual Escape Room",
-    icon: <Puzzle className="w-12 h-12" />,
-    color: "#FF69B4",
-    ...getEventDetails("Virtual Escape Room"),
-    date: "March 17",
-    category: "Fun",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
-  },
-  {
-    id: "digital-fashion",
-    title: "Digital Fashion Design",
-    icon: <Paintbrush className="w-12 h-12" />,
-    color: "#FF4500",
-    ...getEventDetails("Digital Fashion Design"),
-    date: "March 17",
-    category: "Design",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
-  },
-  {
     id: "meme-battle",
-    title: "Meme Battle",
+    title: "Meme Battle – MetaMeme",
     icon: <Tv className="w-12 h-12" />,
     color: "#00D4FF",
-    ...getEventDetails("Meme Battle"),
-    date: "March 17",
+    ...getEventDetails("Meme Battle – MetaMeme"),
+    date: "November 5, 2025",
+    time: "04:00 PM – 05:30 PM",
     category: "Fun",
     registrationLink: "https://forms.gle/S7wVCbLapK6yQf1J9",
   },
   {
     id: "ai-bot-challenge",
-    title: "AI Bot Challenge",
+    title: "AI Bot Challenge – NeuraWars",
     icon: <Brain className="w-12 h-12" />,
     color: "#00FF7F",
-    ...getEventDetails("AI Bot Challenge"),
-    date: "March 17",
+    ...getEventDetails("AI Bot Challenge – NeuraWars"),
+    date: "November 5, 2025",
+    time: "11:30 AM – 01:00 PM",
     category: "Competition",
-    registrationLink: " https://forms.gle/mekVKjAUmAqpnZa18",
+    registrationLink: "https://forms.gle/mekVKjAUmAqpnZa18",
   },
   {
     id: "push-ups",
-    title: "Push-Ups Challenge",
+    title: "Push-Ups Challenge – Power Surge",
     icon: <Footprints className="w-12 h-12" />,
     color: "#7B2CBF",
-    ...getEventDetails("Push-Ups Challenge"),
-    date: "March 17",
+    ...getEventDetails("Push-Ups Challenge – Power Surge"),
+    date: "November 6, 2025",
+    time: "11:00 AM – 12:00 PM",
     category: "Fitness",
     registrationLink: "https://forms.gle/BMPwHG7zZpHkhDg19",
   },
   {
     id: "talent-show",
-    title: "Talent Show",
+    title: "Talent Show – Eclipsera",
     icon: <Mic className="w-12 h-12" />,
     color: "#FFD700",
-    ...getEventDetails("Talent Show"),
-    date: "March 17",
+    ...getEventDetails("Talent Show – Eclipsera"),
+    date: "November 6, 2025",
+    time: "02:00 PM – 04:00 PM",
     category: "Cultural",
     registrationLink: "https://forms.gle/zPhCdJdx3ecQMPTQ9",
   },
   {
+    id: "cosplay",
+    title: "Cosplay – ChronoVerse",
+    icon: <Tv className="w-12 h-12" />,
+    color: "#FF69B4",
+    ...getEventDetails("Cosplay"),
+    date: "November 6, 2025",
+    time: "12:30 PM – 02:00 PM",
+    category: "Cultural",
+    registrationLink: "https://forms.gle/5d57gihm9hY2kgmq6",
+  },
+  {
     id: "bgmi-finals",
-    title: "BGMI Finals",
+    title: "BGMI Tournament – BattleVerse - BGMI",
     icon: <Gamepad2 className="w-12 h-12" />,
     color: "#FF4500",
-    ...getEventDetails("BGMI Finals"),
-    date: "March 18",
+    ...getEventDetails("BGMI Tournament – BattleVerse - BGMI"),
+    date: "November 7, 2025",
+    time: "10:00 AM – 02:00 PM",
     category: "E-Sports",
     registrationLink: "https://forms.gle/onhuHU6gQNdDBgnc9",
   },
   {
-    id: "free-fire-finals",
-    title: "Free Fire Finals",
-    icon: <Gamepad2 className="w-12 h-12" />,
-    color: "#00D4FF",
-    ...getEventDetails("Free Fire Finals"),
-    date: "March 18",
-    category: "E-Sports",
-    registrationLink: "https://forms.gle/9PhHhD32KSRrL1fz9",
-  },
-  {
-    id: "open-mic",
-    title: "Open Mic",
-    icon: <Mic className="w-12 h-12" />,
-    color: "#7B2CBF",
-    ...getEventDetails("Open Mic"),
-    date: "March 18",
-    category: "Cultural",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
-  },
-  {
-    id: "dance-off",
-    title: "Dance Off",
-    icon: <Footprints className="w-12 h-12" />,
-    color: "#FFD700",
-    ...getEventDetails("Dance Off"),
-    date: "March 18",
-    category: "Cultural",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
-  },
-  {
     id: "photography",
-    title: "Photography Contest",
+    title: "Photography – Pixel Rebirth",
     icon: <Camera className="w-12 h-12" />,
     color: "#00FF7F",
-    ...getEventDetails("Photography Contest"),
-    date: "March 18",
+    ...getEventDetails("Photography – Pixel Rebirth"),
+    date: "November 7, 2025",
+    time: "10:00 AM – 04:00 PM",
     category: "Creative",
     registrationLink: "https://forms.gle/RQEdCoe8tTBaKrZk6",
+  },
+  {
+    id: "workshops",
+    title: "Workshops – InnovateX",
+    icon: <FlaskConical className="w-12 h-12" />,
+    color: "#7B2CBF",
+    ...getEventDetails("Workshops – InnovateX"),
+    date: "November 3–7, 2025",
+    time: "10:00 AM – 04:00 PM (varies by topic)",
+    category: "Workshop",
+    registrationLink: "https://forms.gle/DYftBze1xtKX6ZYbA",
   },
 ];
 
@@ -739,7 +706,14 @@ const EventCard: React.FC<EventCardProps> = ({ event, onLearnMore }) => {
 
         <div className="flex space-x-4 mt-6">
           <button
-            onClick={() => window.open(event.registrationLink, "_blank")}
+            onClick={() => {
+              if (event.registrationLink && event.registrationLink !== "TBA") {
+                window.open(event.registrationLink, "_blank");
+              } else {
+                // fallback: open unstop or do nothing
+                window.open("https://www.unstop.com", "_blank");
+              }
+            }}
             className="flex-grow px-4 py-3 rounded-xl font-bold text-sm text-white transition-all duration-300 shadow-lg"
             style={{
               background: `linear-gradient(90deg, ${gradientStart}, ${gradientEnd})`,
@@ -889,7 +863,13 @@ const EventModal: React.FC<EventModalProps> = ({ event, onClose }) => {
               CLOSE
             </button>
             <button
-              onClick={() => window.open(event.registrationLink, "_blank")}
+              onClick={() => {
+                if (event.registrationLink && event.registrationLink !== "TBA") {
+                  window.open(event.registrationLink, "_blank");
+                } else {
+                  window.open("https://www.unstop.com", "_blank");
+                }
+              }}
               className="px-6 py-3 rounded-xl font-bold text-white transition-all duration-300 shadow-lg"
               style={{
                 background: `linear-gradient(90deg, ${event.color}, ${
@@ -947,19 +927,7 @@ const App: React.FC = () => {
             ))}
           </div>
 
-          <div className="mt-20 text-center">
-            <p className="text-xl text-gray-300 mb-8 font-medium">
-              Ready to participate in these amazing events?
-            </p>
-            <a
-              href="https://www.unstop.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-12 py-4 bg-gradient-to-r from-[#00D4FF] to-[#7B2CBF] rounded-xl font-bold text-xl text-white shadow-xl hover:shadow-[0_0_30px_rgba(123,44,191,0.6)] hover:scale-[1.03] transition-all duration-300 transform"
-            >
-              Register on Unstop
-            </a>
-          </div>
+          
         </div>
       </section>
 
