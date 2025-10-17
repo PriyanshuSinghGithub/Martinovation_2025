@@ -450,7 +450,7 @@ const allEvents: Event[] = [
     date: "March 15",
     speaker: "Judges/Mentors",
     category: "Competition",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "- https://forms.gle/pHa9WXfHAP997Tzi6",
   },
   {
     id: "tech-quiz",
@@ -460,7 +460,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Tech Quiz"),
     date: "March 15",
     category: "Quiz",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/62KSrgAU9Fm9V7mt7",
   },
   {
     id: "tech-talk",
@@ -493,7 +493,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Web Dev Sprint"),
     date: "March 16",
     category: "Competition",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://unstop.com/o/kKEsuHF?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Competitions",
   },
   {
     id: "electronics-design",
@@ -523,7 +523,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Hack Puzzle"),
     date: "March 16",
     category: "Puzzle",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/i8bbBaSDkXv6ZoV67",
   },
   {
     id: "general-quiz",
@@ -533,7 +533,7 @@ const allEvents: Event[] = [
     ...getEventDetails("General Quiz"),
     date: "March 16",
     category: "Quiz",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/zYWT7J8LW27yVLkS6",
   },
   {
     id: "ai-art-music",
@@ -543,7 +543,7 @@ const allEvents: Event[] = [
     ...getEventDetails("AI Art + AI Music Composition"),
     date: "March 16",
     category: "Creative",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/XLiBnC9w3xXuJLVo7",
   },
   {
     id: "project-exhibition",
@@ -553,7 +553,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Project Exhibition"),
     date: "March 17",
     category: "Exhibition",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/miKbJ7H8scnhaHiF8",
   },
   {
     id: "autocad-design",
@@ -563,7 +563,7 @@ const allEvents: Event[] = [
     ...getEventDetails("AutoCAD Design"),
     date: "March 17",
     category: "Design",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/KvU8HjocZHGVSZD2A",
   },
   {
     id: "drone-race",
@@ -573,7 +573,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Drone Race"),
     date: "March 17",
     category: "Competition",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/Ea4eXJvvf3UHP6oA8",
   },
   {
     id: "virtual-escape",
@@ -603,7 +603,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Meme Battle"),
     date: "March 17",
     category: "Fun",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/S7wVCbLapK6yQf1J9",
   },
   {
     id: "ai-bot-challenge",
@@ -613,7 +613,7 @@ const allEvents: Event[] = [
     ...getEventDetails("AI Bot Challenge"),
     date: "March 17",
     category: "Competition",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: " https://forms.gle/mekVKjAUmAqpnZa18",
   },
   {
     id: "push-ups",
@@ -623,7 +623,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Push-Ups Challenge"),
     date: "March 17",
     category: "Fitness",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/BMPwHG7zZpHkhDg19",
   },
   {
     id: "talent-show",
@@ -633,7 +633,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Talent Show"),
     date: "March 17",
     category: "Cultural",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/zPhCdJdx3ecQMPTQ9",
   },
   {
     id: "bgmi-finals",
@@ -643,7 +643,7 @@ const allEvents: Event[] = [
     ...getEventDetails("BGMI Finals"),
     date: "March 18",
     category: "E-Sports",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/onhuHU6gQNdDBgnc9",
   },
   {
     id: "free-fire-finals",
@@ -653,7 +653,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Free Fire Finals"),
     date: "March 18",
     category: "E-Sports",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/9PhHhD32KSRrL1fz9",
   },
   {
     id: "open-mic",
@@ -683,7 +683,7 @@ const allEvents: Event[] = [
     ...getEventDetails("Photography Contest"),
     date: "March 18",
     category: "Creative",
-    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
+    registrationLink: "https://forms.gle/RQEdCoe8tTBaKrZk6",
   },
 ];
 
