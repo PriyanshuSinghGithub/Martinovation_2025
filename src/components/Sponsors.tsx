@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Handshake } from "lucide-react";
 const sponsorLogos = [
   { name: "Powered By Unstop", logo: "/images/sponsor/unstop-logo.jpg" },
   { name: "Technical Partner", logo: "/images/sponsor/gfg-logo.jpg" },
-  { name: "Quizzing Partner", logo: "/images/sponsor/codechef-logo.jpg" },
+  { name: "Quizzing Partner", logo: "/images/sponsor/cc-logo.jpg" },
   { name: "Tech Sponsor 4", logo: "/images/sponsor/ts4" },
   { name: "Tech Sponsor 5", logo: "/images/sponsor/ts5" },
 ];
