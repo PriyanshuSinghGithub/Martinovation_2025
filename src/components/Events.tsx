@@ -451,7 +451,7 @@ const allEvents: Event[] = [
     date: "November 3–4, 2025",
     time: "04:00 PM (Nov 3) – 04:00 PM (Nov 4)",
     category: "Competition",
-    registrationLink: "https://forms.gle/JSe9cRPfahGXNPxw7",
+    registrationLink: "https://forms.gle/LWod7N7kzFVZAeyd6",
   },
   {
     id: "web-dev-sprint",
@@ -705,24 +705,26 @@ const EventCard: React.FC<EventCardProps> = ({ event, onLearnMore }) => {
         </p>
 
         <div className="flex space-x-4 mt-6">
-          <button
-            onClick={() => {
-              if (event.registrationLink && event.registrationLink !== "TBA") {
-                window.open(event.registrationLink, "_blank");
-              } else {
-                // fallback: open unstop or do nothing
-                window.open("https://www.unstop.com", "_blank");
-              }
-            }}
-            className="flex-grow px-4 py-3 rounded-xl font-bold text-sm text-white transition-all duration-300 shadow-lg"
-            style={{
-              background: `linear-gradient(90deg, ${gradientStart}, ${gradientEnd})`,
-              boxShadow: `0 4px 15px ${gradientStart}50`,
-              transform: isHovered ? "scale(1.03)" : "scale(1)",
-            }}
-          >
-            REGISTER
-          </button>
+          {!["opening-ceremony", "tech-talk"].includes(event.id) && (
+  <button
+    onClick={() => {
+      if (event.registrationLink && event.registrationLink !== "TBA") {
+        window.open(event.registrationLink, "_blank");
+      } else {
+        window.open("https://www.unstop.com", "_blank");
+      }
+    }}
+    className="flex-grow px-4 py-3 rounded-xl font-bold text-sm text-white transition-all duration-300 shadow-lg"
+    style={{
+      background: `linear-gradient(90deg, ${gradientStart}, ${gradientEnd})`,
+      boxShadow: `0 4px 15px ${gradientStart}50`,
+      transform: isHovered ? "scale(1.03)" : "scale(1)",
+    }}
+  >
+    REGISTER
+  </button>
+)}
+
           <button
             onClick={() => onLearnMore(event)}
             className="flex-grow px-4 py-3 rounded-xl font-semibold text-sm text-white border-2 transition-all duration-300 hover:bg-[#1A334B]"
@@ -862,26 +864,29 @@ const EventModal: React.FC<EventModalProps> = ({ event, onClose }) => {
             >
               CLOSE
             </button>
-            <button
-              onClick={() => {
-                if (event.registrationLink && event.registrationLink !== "TBA") {
-                  window.open(event.registrationLink, "_blank");
-                } else {
-                  window.open("https://www.unstop.com", "_blank");
-                }
-              }}
-              className="px-6 py-3 rounded-xl font-bold text-white transition-all duration-300 shadow-lg"
-              style={{
-                background: `linear-gradient(90deg, ${event.color}, ${
-                  event.color === "#00D4FF" || event.color === "#00FF7F"
-                    ? "#7B2CBF"
-                    : "#00D4FF"
-                })`,
-                boxShadow: `0 4px 15px ${event.color}50`,
-              }}
-            >
-              REGISTER
-            </button>
+            {!["opening-ceremony", "tech-talk"].includes(event.id) && (
+  <button
+    onClick={() => {
+      if (event.registrationLink && event.registrationLink !== "TBA") {
+        window.open(event.registrationLink, "_blank");
+      } else {
+        window.open("https://www.unstop.com", "_blank");
+      }
+    }}
+    className="px-6 py-3 rounded-xl font-bold text-white transition-all duration-300 shadow-lg"
+    style={{
+      background: `linear-gradient(90deg, ${event.color}, ${
+        event.color === "#00D4FF" || event.color === "#00FF7F"
+          ? "#7B2CBF"
+          : "#00D4FF"
+      })`,
+      boxShadow: `0 4px 15px ${event.color}50`,
+    }}
+  >
+    REGISTER
+  </button>
+)}
+
           </div>
         </div>
       </div>
