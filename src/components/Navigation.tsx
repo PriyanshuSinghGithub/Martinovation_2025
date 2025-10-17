@@ -20,7 +20,7 @@ const Navigation = () => {
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Schedule", href: "#schedule" },
+    // { name: "Schedule", href: "#schedule" },
     { name: "Events", href: "#events" },
     { name: "Gallery", href: "#gallery" },
     { name: "Team", href: "#team" },
