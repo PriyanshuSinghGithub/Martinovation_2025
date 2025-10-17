@@ -5,7 +5,7 @@ import Auth from './components/Auth';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
-import Schedule from './components/Schedule';
+// import Schedule from './components/Schedule';
 import Events from './components/Events';
 import Gallery from './components/Gallery';
 import Team from './components/Team';
@@ -33,7 +33,7 @@ function AppContent() {
         <Navigation />
         <Hero />
         <About />
-        <Schedule />
+        {/* <Schedule /> */}
         <Events />
         <Gallery />
         <Team />
