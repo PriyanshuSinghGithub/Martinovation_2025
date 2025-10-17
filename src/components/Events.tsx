@@ -48,10 +48,10 @@ const getEventDetails = (title: string) => {
     "Hackathon – BitShift": {
       description:
         "A 24-hour coding competition where teams develop innovative software solutions based on a theme.",
-      long: "A 24-hour hackathon (BitShift). Teams of 2-4 build software solutions around a theme. Participant Requirements: Laptop, IDEs installed. Organizer provides internet, power, workspace, mentors, refreshments, and judging. Prize pool ₹40,000 (1st ₹20,000, 2nd ₹12,000, 3rd ₹8,000). Entry fee: ₹500 per team. Slot: 200 teams.",
-      fee: "₹500 / team",
+      long: "A 24-hour hackathon (BitShift). Teams of 2-4 build software solutions around a theme. Participant Requirements: Laptop, IDEs installed. Organizer provides internet, power, workspace, mentors, refreshments, and judging. Prize pool ₹40,000 (1st ₹20,000, 2nd ₹12,000, 3rd ₹8,000). Entry fee: ₹499 per team. Slot: 200 teams.",
+      fee: "₹499 / team",
       prize: "₹40,000",
-      slot: 200,
+      slot: 800,
       team: "2-4",
       includes: ["Prize pool ₹40,000", "Internet & Power", "Mentorship"],
     },
@@ -151,23 +151,32 @@ const getEventDetails = (title: string) => {
       team: "2-4",
       includes: ["Display tables", "Electricity", "Judges"],
     },
+    "Mashup Battle – FusionBeat": {
+      description: "Where imagination meets innovation in a music and performance mashup.",
+      long: `Mashup Battle – FusionBeat: Teams or individuals create innovative musical performances blending different genres, instruments, or digital sounds. Participant Requirements: instruments, laptops, or phones with music software. Organizer provides stage, projector, sound system, and judges.`,
+      fee: "Free",
+      prize: "Certificates & Medals",
+      slot: "Open",
+      team: "Individual / Group",
+      includes: ["Stage & sound system", "Judges", "Projector & lighting"],
+    },
     "BGMI Tournament – BattleVerse - BGMI": {
       description: "BGMI Battle Royale tournament.",
       long: "BGMI Tournament – BattleVerse: competitive PUBG Mobile (BGMI) tournament. Participant Requirements: smartphone with BGMI. Organizer provides lobby setup, projector, internet, and prizes. Entry fee ₹149 per team; slots 200 teams.",
-      fee: "₹149 / team",
+      fee: "₹99 / team",
       prize: "₹30,000",
       slot: 200,
       team: "4",
       includes: ["Lobby & streaming", "Prizes"],
     },
-    "Valorant Tournament": {
-      description: "Competitive PC shooter tournament (Valorant).",
-      long: "Valorant Tournament: competitive PC shooter matches. Participant Requirements: PC with Valorant, peripherals. Organizer provides PCs (if needed), internet, admin, and projector. Entry fee ₹149 per team; slots 200 teams.",
-      fee: "₹149 / team",
-      prize: "₹20,000",
+    "Free Fire Max Tournament": {
+      description: "Free Fire Max competitive gaming tournament.",
+      long: `Teams compete in Free Fire Max. Participant Requirements: smartphone with FF Max. Organizer provides lobby setup, projector, internet, and prizes. Prize pool ₹30,000 (1st ₹10,000 + merch, 2nd ₹5,000 + merch, 3rd ₹3,000 + merch).`,
+      fee: "₹99 / team",
+      prize: "₹30,000",
       slot: 200,
       team: "4",
-      includes: ["PCs & internet", "Admin & projector"],
+      includes: ["Lobby setup & streaming", "Judges", "Internet & projector", "Prizes for top 3"],
     },
     "AutoCAD Design – FutureFrame": {
       description: "Design 2D/3D models in AutoCAD.",
@@ -340,14 +349,19 @@ const getEventDetails = (title: string) => {
       venue: "Baitarni reception",
       day: "Day 3",
     },
+    "Mashup Battle – FusionBeat": {
+      time: "03:00 PM – 04:30 PM",
+      venue: "Baitarni reception",
+      day: "Day 3",
+    },
     "BGMI Tournament – BattleVerse - BGMI": {
       time: "10:00 – 14:00",
       venue: "Baitarni 2nd floor - seminar hall",
       day: "Day 4",
     },
-    "Valorant Tournament": {
-      time: "10:00 – 13:00",
-      venue: "Baitarni 5th floor lab",
+    "Free Fire Max Tournament": {
+      time: "11:00 AM – 03:00 PM",
+      venue: "Baitarni 2nd floor - seminar hall",
       day: "Day 4",
     },
     "Photography – Pixel Rebirth": {
@@ -620,6 +634,17 @@ const allEvents: Event[] = [
     registrationLink: "https://forms.gle/5d57gihm9hY2kgmq6",
   },
   {
+    id: "mashup-battle",
+    title: "Mashup Battle – FusionBeat",
+    icon: <Music className="w-12 h-12" />,
+    color: "#FF69B4",
+    ...getEventDetails("Mashup Battle – FusionBeat"),
+    date: "November 5, 2025",
+    time: "03:00 PM – 04:30 PM",
+    category: "Creative",
+    registrationLink: "https://forms.gle/TfV5PyUhQBFYrEiz7",
+  },
+  {
     id: "bgmi-finals",
     title: "BGMI Tournament – BattleVerse - BGMI",
     icon: <Gamepad2 className="w-12 h-12" />,
@@ -629,6 +654,17 @@ const allEvents: Event[] = [
     time: "10:00 AM – 02:00 PM",
     category: "E-Sports",
     registrationLink: "https://forms.gle/onhuHU6gQNdDBgnc9",
+  },
+  {
+    id: "free-fire-max",
+    title: "Free Fire Max Tournament",
+    icon: <Gamepad2 className="w-12 h-12" />,
+    color: "#FF4500",
+    ...getEventDetails("Free Fire Max Tournament"),
+    date: "November 7, 2025",
+    time: "11:00 AM – 03:00 PM",
+    category: "E-Sports",
+    registrationLink: "https://forms.gle/9PhHhD32KSRrL1fz9", // replace with actual link
   },
   {
     id: "photography",
