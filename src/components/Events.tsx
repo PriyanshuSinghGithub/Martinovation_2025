@@ -483,7 +483,7 @@ const allEvents: Event[] = [
     category: "Competition",
     description:
       "36-hour coding competition where teams develop innovative software solutions or apps.",
-    registrationLink: "https://www.unstop.com",
+    registrationLink: "https://unstop.com/o/4Os1FIN?lb=LOBfmTq&utm_medium=Share&utm_source=kumarvinay21&utm_campaign=Online_coding_challenge",
   },
   {
     id: "web-dev-sprint",
