@@ -28,7 +28,7 @@ export const intercollegeEvents: Event[] = [
     venue: "Computer Lab & Open Spaces",
     description: "Building the future, one idea at a time. 24-hour intensive coding competition where teams build innovative solutions to real-world problems.",
     entryFee: "499 per team",
-    team: "3-4 person",
+    team: "2-4 person",
     participantRequirements: "Laptops, programming skills, creativity, problem-solving abilities.",
     organizerProvides: "Problem statements, mentors, workspace, meals, judging panel.",
     preparation: "Define problem statements, arrange mentors, setup workspace, plan meals.",
