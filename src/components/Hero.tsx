@@ -282,7 +282,7 @@ const Hero = () => {
             <span className="inline-block w-1 h-12 md:h-16 bg-[#7B2CBF] ml-2 animate-pulse"></span>
           </h1>
 
-          <p className="text-xl md:text-3xl mb-8 text-[#231c25] glow-cyan">
+          <p className="text-xl md:text-3xl mb-8 text-[##FF9900] glow-cyan">
             Nov 3-7 | Ignite Innovation at UMU
           </p>
         </div>

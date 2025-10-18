@@ -72,7 +72,7 @@ const About = () => {
               </div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-[#7B2CBF]/20 to-transparent rounded-xl border border-[#7B2CBF]/30">
-              <div className="text-4xl font-bold text-[#7B2CBF] mb-2">20+</div>
+              <div className="text-4xl font-bold text-[#7B2CBF] mb-2">25+</div>
               <div className="text-sm uppercase tracking-wider text-gray-300">
                 Tech Events
               </div>
