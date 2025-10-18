@@ -30,7 +30,7 @@ export const intercollegeEvents: Event[] = [
     entryFee: "499 per team",
     team: "2-4 person",
     participantRequirements: "Laptops, programming skills, creativity, problem-solving abilities.",
-    organizerProvides: "Problem statements, mentors, workspace, meals, judging panel.",
+    organizerProvides: "Free meals and Accomodation.",
     preparation: "Define problem statements, arrange mentors, setup workspace, plan meals.",
     category: "intercollege",
     registrationLink: "https://forms.gle/LWod7N7kzFVZAeyd6"
