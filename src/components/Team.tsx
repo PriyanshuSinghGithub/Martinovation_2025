@@ -14,7 +14,6 @@ interface Department {
 
 const coreTeam: CoreMember[] = [
   { name: 'Umanand Mishra', contact: '8674944887' },
-  { name: 'Ankur Anand', contact: '9263476357' },
   { name: 'Madhur Manoj', contact: '8092971088' },
   { name: 'Akash Singh', contact: '7739339852' },
   { name: 'Shivanjali Shudhanshu', contact: '7209483014' },
@@ -72,19 +71,11 @@ const departments: Department[] = [
   },
   {
     name: 'Web Design & Development',
-    head: { name: 'Vinay Kumar', contact: '9065934001' },
-    coordinators: [{ name: 'Priyanshu Kr. Singh', contact: '6205133276' }],
+    head: { name: 'Priyanshu Kr. Singh', contact: '6205133276' },
+    coordinators: [{ name: 'Bhaskar Talukder', contact: '8293744474' }],
   },
-  {
-    name: 'Marketing & Media',
-    head: { name: 'Ankur Anand', contact: '9263476357' },
-    coordinators: [{ name: 'Anand Kr. Yadav', contact: '9390154730' }],
-  },
-  {
-    name: 'Sponsorship',
-    head: { name: 'Umanand Mishra', contact: '8674944887' },
-    coordinators: [{ name: 'Harsh Kr. Singh', contact: '7903796913' }],
-  },
+
+
 ];
 
 const Team = () => {

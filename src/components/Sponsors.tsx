@@ -5,7 +5,7 @@ const sponsorLogos = [
   { name: "Powered By Unstop", logo: "/images/sponsor/unstop-logo.jpg" },
   { name: "Technical Partner", logo: "/images/sponsor/gfg-logo.jpg" },
   { name: "Quizzing Partner", logo: "/images/sponsor/cc-logo.jpg" },
-  { name: "Ttitle Sponsor", logo: "/images/sponsor/triumph-logo.png" },
+  { name: "Title Sponsor", logo: "/images/sponsor/triumph-logo.png" },
   { name: "Gaming Partner", logo: "/images/sponsor/jiogames-logo.png" },
 ];
 

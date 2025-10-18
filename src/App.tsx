@@ -24,7 +24,7 @@ function App() {
   if (loading) return <Loading />;
 
   return (
-    <div className="relative min-h-screen bg-white dark:bg-[#0A2540]">
+    <div className="relative min-h-screen bg-[#0A2540]">
       <div className="pt-0">
         <Navigation />
         <Hero />

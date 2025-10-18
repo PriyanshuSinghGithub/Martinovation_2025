@@ -1,0 +1,67 @@
+/* Optimized glow effects for Hero section */
+
+.glow-purple {
+  text-shadow: 
+    0 0 10px rgba(123, 44, 191, 0.5),
+    0 0 20px rgba(123, 44, 191, 0.3),
+    0 0 30px rgba(123, 44, 191, 0.2);
+  color: #ffffff;
+}
+
+.glow-cyan {
+  text-shadow: 
+    0 0 10px rgba(0, 212, 255, 0.5),
+    0 0 20px rgba(0, 212, 255, 0.3);
+  color: #ffffff;
+}
+
+/* Performance optimized animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .glow-purple,
+  .glow-cyan {
+    text-shadow: none;
+  }
+  
+  .float-animation,
+  .animate-bounce,
+  .animate-pulse {
+    animation: none;
+  }
+  
+  .transform {
+    transform: none !important;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .glow-purple {
+    text-shadow: 
+      0 0 5px rgba(123, 44, 191, 0.4),
+      0 0 10px rgba(123, 44, 191, 0.2);
+  }
+  
+  .glow-cyan {
+    text-shadow: 
+      0 0 5px rgba(0, 212, 255, 0.4);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .glow-purple,
+  .glow-cyan {
+    text-shadow: none;
+    color: #ffffff;
+  }
+}

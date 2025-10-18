@@ -136,3 +136,114 @@ h1, h2, h3, h4, h5, h6 {
 canvas {
   display: block;
 }
+
+/* Chatbot specific styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-cyan {
+  scrollbar-color: var(--color-cyan) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--color-cyan);
+  border-radius: 3px;
+  opacity: 0.3;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  opacity: 0.6;
+}
+
+/* Chatbot animations */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-up {
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes messageSlideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.message-slide-in {
+  animation: messageSlideIn 0.3s ease-out;
+}
+
+/* Chatbot button pulse effect */
+@keyframes chatPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 212, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0);
+  }
+}
+
+.chat-pulse {
+  animation: chatPulse 2s infinite;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .slide-in-up {
+    animation: slideInUpMobile 0.3s ease-out;
+  }
+  
+  @keyframes slideInUpMobile {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/* Touch-friendly interactions */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better mobile scrolling */
+@media (max-width: 640px) {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--color-cyan);
+    border-radius: 2px;
+  }
+}
