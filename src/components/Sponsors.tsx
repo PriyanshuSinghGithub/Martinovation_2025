@@ -5,8 +5,8 @@ const sponsorLogos = [
   { name: "Powered By Unstop", logo: "/images/sponsor/unstop-logo.jpg" },
   { name: "Technical Partner", logo: "/images/sponsor/gfg-logo.jpg" },
   { name: "Quizzing Partner", logo: "/images/sponsor/cc-logo.jpg" },
-  { name: "Tech Sponsor 4", logo: "/images/sponsor/ts4" },
-  { name: "Tech Sponsor 5", logo: "/images/sponsor/ts5" },
+  { name: "Ttitle Sponsor", logo: "/images/sponsor/triumph-logo.png" },
+  { name: "Gaming Partner", logo: "/images/sponsor/jiogames-logo.png" },
 ];
 
 const Sponsors = () => {
@@ -78,7 +78,7 @@ const Sponsors = () => {
                       <img
                         src={sponsor.logo}
                         alt={sponsor.name}
-                        className="w-54 h-54 mx-auto mb-4 rounded-full object-contain p-2 group-hover:scale-110 transition-transform duration-300"
+                        className="w-54 h-54 mx-auto mb-4 object-contain p-2 group-hover:scale-110 transition-transform duration-300"
                       />
 
                       <p className="text-white font-semibold text-lg">
