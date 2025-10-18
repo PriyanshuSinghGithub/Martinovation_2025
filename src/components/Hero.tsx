@@ -157,9 +157,9 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="#schedule" className="btn-primary inline-block">
+          {/* <a href="#schedule" className="btn-primary inline-block">
             Dive into Schedule
-          </a>
+          </a> */}
           <a
             href="#events"
             className="px-8 py-4 border-2 border-[#FFD700] text-[#FFD700] rounded-lg font-semibold uppercase tracking-wide hover:bg-[#FFD700] hover:text-[#0A2540] transition-all duration-300"
