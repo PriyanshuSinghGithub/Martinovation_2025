@@ -14,7 +14,7 @@ const getRegistrationLink = (event: Event): string => {
 
 const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const registrationLink = getRegistrationLink(event.name);
+  const registrationLink = getRegistrationLink(event);
 
   const handleRegister = () => {
     if (registrationLink.startsWith('#')) {

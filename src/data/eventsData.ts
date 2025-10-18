@@ -77,7 +77,8 @@ export const intercollegeEvents: Event[] = [
     participantRequirements: "HTML, CSS, JavaScript knowledge, design skills.",
     organizerProvides: "Theme/requirements, internet access, hosting platform, judges.",
     preparation: "Prepare website themes, setup development environment, arrange judges.",
-    category: "intercollege"
+    category: "intercollege",
+    registrationLink: "https://forms.gle/Bkvc9JB8fDzwiJCJ7"
   },
   {
     day: "Day 3",
