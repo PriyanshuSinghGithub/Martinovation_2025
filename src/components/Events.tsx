@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, MapPin, Users, DollarSign, ExternalLink, Globe, School } from 'lucide-react';
+import { Calendar, MapPin, Users, IndianRupee, ExternalLink, Globe, School } from 'lucide-react';
 import { intercollegeEvents, umuOnlyEvents, Event } from '../data/eventsData';
 
 interface EventCardProps {
@@ -7,27 +7,9 @@ interface EventCardProps {
   isIntercollege: boolean;
 }
 
-// Registration links for each event
-const getRegistrationLink = (eventName: string): string => {
-  const registrationLinks: Record<string, string> = {
-    "Hackathon": "https://forms.gle/LWod7N7kzFVZAeyd6",
-    "Web Development Contest": "https://forms.gle/Bkvc9JB8fDzwiJCJ7",
-    "Cosplay Competition": "https://forms.gle/5d57gihm9hY2kgmq6",
-    "BGMI Tournament": "https://forms.gle/onhuHU6gQNdDBgnc9",
-    "Free Fire Tournament": "https://forms.gle/9PhHhD32KSRrL1fz9",
-    "Robotics Competition": "https://forms.gle/tTFrYFJyckqdrAiQ9",
-    "Robo Race": "https://forms.gle/tTFrYFJyckqdrAiQ9", // Same as robotics for now
-    "Drone Race": "https://forms.gle/Ea4eXJvvf3UHP6oA8",
-    "Coding Marathon": "https://forms.gle/pHa9WXfHAP997Tzi6",
-    "Tech Quiz": "https://forms.gle/62KSrgAU9Fm9V7mt7",
-    "AI/ML Workshop": "https://forms.gle/DYftBze1xtKX6ZYbA",
-    "Startup Pitch Competition": "https://forms.gle/miKbJ7H8scnhaHiF8",
-    "Cybersecurity Workshop": "https://forms.gle/DYftBze1xtKX6ZYbA",
-    "Tech Exhibition": "https://forms.gle/miKbJ7H8scnhaHiF8",
-    "Closing Ceremony & Prize Distribution": "#contact"
-  };
-  
-  return registrationLinks[eventName] || "https://www.unstop.com";
+// Get registration link from event data or fallback
+const getRegistrationLink = (event: Event): string => {
+  return event.registrationLink || "#contact";
 };
 
 const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
@@ -75,7 +57,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
             <span>{event.team}</span>
           </div>
           <div className="flex items-center text-gray-400 text-xs">
-            <DollarSign className="w-3 h-3 mr-1 text-[#00D4FF] flex-shrink-0" />
+            <IndianRupee className="w-3 h-3 mr-1 text-[#00D4FF] flex-shrink-0" />
             <span className="font-semibold text-[#FFD700]">{event.entryFee}</span>
           </div>
         </div>
