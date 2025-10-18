@@ -32,7 +32,8 @@ export const intercollegeEvents: Event[] = [
     participantRequirements: "Laptops, programming skills, creativity, problem-solving abilities.",
     organizerProvides: "Problem statements, mentors, workspace, meals, judging panel.",
     preparation: "Define problem statements, arrange mentors, setup workspace, plan meals.",
-    category: "intercollege"
+    category: "intercollege",
+    registrationLink: "https://forms.gle/LWod7N7kzFVZAeyd6"
   },
   {
     day: "Day 1",
@@ -397,7 +398,7 @@ export const umuOnlyEvents: Event[] = [
     time: "10:00–16:00",
     venue: "Exhibition Hall",
     description: "Showcasing the prototypes of tomorrow. Project exhibition displaying innovative student projects and research work.",
-    entryFee: "Free for visitors, 199 for exhibitors",
+    entryFee: "Free",
     slot: "UMU Students Only",
     team: "Individual/Team",
     participantRequirements: "Completed project, presentation materials, demonstration setup.",
