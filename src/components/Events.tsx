@@ -15,6 +15,13 @@ interface EventCardProps {
   isIntercollege: boolean;
 }
 
+const prizePools: Record<string, string> = {
+  "BitShift - Hackathon": "₹40,000",
+  "WebVerse - Web Development Sprint": "₹10,000",
+  "BattleVerse - BGMI": "₹10,000 + in-game rewards",
+  "BattleVerse - FF Max": "₹10,000 + in-game rewards",
+};
+
 // Get registration link from event data or fallback
 const getRegistrationLink = (event: Event): string => {
   return event.registrationLink || "#contact";
@@ -78,6 +85,13 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
               {event.entryFee}
             </span>
           </div>
+          {prizePools[event.name] && (
+            <div className="flex items-center text-gray-300 text-xs mt-1">
+              <span className="font-semibold text-[#FFD700]">
+                Prize Pool: {prizePools[event.name]}
+              </span>
+            </div>
+          )}
         </div>
 
         <div className="mb-3">
@@ -231,7 +245,7 @@ const Events = () => {
 
         {/* Events Grid */}
         {activeTab === "intercollege" ? (
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3 px-4 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3 px-4 items-start">
             {intercollegeEvents.map((event, index) => (
               <EventCard key={index} event={event} isIntercollege={true} />
             ))}
