@@ -18,6 +18,7 @@ const coreTeam: CoreMember[] = [
   { name: 'Akash Singh', contact: '7739339852' },
   { name: 'Shivanjali Shudhanshu', contact: '7209483014' },
   { name: 'Himank Jaiswal', contact: '7016545592' },
+  { name: 'Vinay Kumar', contact: '90659 34001' },
 ];
 
 const departments: Department[] = [
