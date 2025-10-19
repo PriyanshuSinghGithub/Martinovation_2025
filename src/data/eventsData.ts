@@ -22,7 +22,7 @@ export interface Event {
 // Intercollege Events (Open to all colleges)
 export const intercollegeEvents: Event[] = [
   {
-    day: "Day 1",
+    day: "3rd Nov - Day 1",
     code: "I1-01",
     name: "BitShift - Hackathon",
     time: "09:00–18:00",
@@ -38,7 +38,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/LWod7N7kzFVZAeyd6"
   },
   {
-    day: "Day 1",
+    day: "3rd Nov - Day 1",
     code: "I1-02",
     name: "Rise of Machines - Robotics Challenge",
     time: "10:30–13:00",
@@ -54,7 +54,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/tTFrYFJyckqdrAiQ9"
   },
   {
-    day: "Day 2",
+    day: "4th Nov - Day 2",
     code: "I2-01",
     name: "SkyNova - Drone Racing",
     time: "10:00–12:00",
@@ -70,7 +70,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/Ea4eXJvvf3UHP6oA8"
   },
   {
-    day: "Day 2",
+    day: "4th Nov - Day 2",
     code: "I2-02",
     name: "WebVerse - Web Development Sprint",
     time: "10:00–15:00",
@@ -86,7 +86,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/Bkvc9JB8fDzwiJCJ7"
   },
   {
-    day: "Day 3",
+    day: "5th Nov - Day 3",
     code: "I3-01",
     name: "ChronoVerse - Cosplay Competition",
     time: "12:30–14:00",
@@ -102,7 +102,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/5d57gihm9hY2kgmq6"
   },
   {
-    day: "Day 3",
+    day: "5th Nov - Day 3",
     code: "I3-02",
     name: "MechaRush - Robot Racing",
     time: "14:00–16:00",
@@ -118,7 +118,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/6its5k6xyhV4YTMS6"
   },
   {
-    day: "Day 4",
+    day: "6th Nov - Day 4",
     code: "I4-01",
     name: "BattleVerse - BGMI",
     time: "10:00–14:00",
@@ -134,7 +134,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/onhuHU6gQNdDBgnc9"
   },
   {
-    day: "Day 4",
+    day: "6th Nov - Day 4",
     code: "I4-02",
     name: "BattleVerse - FF Max",
     time: "11:00–15:00",
@@ -155,7 +155,7 @@ export const intercollegeEvents: Event[] = [
 export const umuOnlyEvents: Event[] = [
 
   {
-    day: "Day 1",
+    day: "3rd Nov - Day 1",
     code: "U1-02",
     name: "FutureScript - Coding Marathon",
     time: "10:00–15:00",
@@ -173,7 +173,7 @@ export const umuOnlyEvents: Event[] = [
   },
 
   {
-    day: "Day 1",
+    day: "3rd Nov - Day 1",
     code: "U1-04",
     name: "TechQuest - Tech Quiz",
     time: "14:00–16:00",
@@ -190,7 +190,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/62KSrgAU9Fm9V7mt7"
   },
   {
-    day: "Day 1",
+    day: "3rd Nov - Day 1",
     code: "U1-05",
     name: "MindForge - General Knowledge Quiz",
     time: "16:30–18:00",
@@ -208,7 +208,7 @@ export const umuOnlyEvents: Event[] = [
   },
 
   {
-    day: "Day 2",
+    day: "4th Nov - Day 2",
     code: "U2-02",
     name: "CodeCipher - Hack Puzzle",
     time: "14:00–16:00",
@@ -226,7 +226,7 @@ export const umuOnlyEvents: Event[] = [
   },
 
   {
-    day: "Day 2",
+    day: "4th Nov - Day 2",
     code: "U2-04",
     name: "NeuraWars - AI Bot Challenge",
     time: "16:30–18:30",
@@ -243,7 +243,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/mekVKjAUmAqpnZa18"
   },
   {
-    day: "Day 3",
+    day: "5th Nov - Day 3",
     code: "U3-01",
     name: "VisionSynth - AI Art Competition",
     time: "10:00–14:00",
@@ -260,7 +260,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/XLiBnC9w3xXuJLVo7"
   },
   {
-    day: "Day 3",
+    day: "5th Nov - Day 3",
     code: "U3-02",
     name: "EchoMind - AI Music Composition",
     time: "14:30–17:00",
@@ -277,7 +277,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/B8CMkySxLvTbQUui7"
   },
   {
-    day: "Day 3",
+    day: "5th Nov - Day 3",
     code: "U3-03",
     name: "FutureFrame - AutoCAD Design Challenge",
     time: "10:00–15:00",
@@ -298,7 +298,7 @@ export const umuOnlyEvents: Event[] = [
 
 
   {
-    day: "Day 4",
+    day: "6th Nov - Day 4",
     code: "U4-03",
     name: "MetaMeme - Meme Contest",
     time: "16:00–17:30",
@@ -315,7 +315,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/S7wVCbLapK6yQf1J9"
   },
   {
-    day: "Day 5",
+    day: "7th Nov - Day 5",
     code: "U5-01",
     name: "Pixel Rebirth - Photography Contest",
     time: "10:00–16:00",
@@ -332,7 +332,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/RQEdCoe8tTBaKrZk6"
   },
   {
-    day: "Day 5",
+    day: "7th Nov - Day 5",
     code: "U5-02",
     name: "Eclipsera - Talent Show",
     time: "14:00–16:00",
@@ -349,7 +349,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/zPhCdJdx3ecQMPTQ9"
   },
   {
-    day: "Day 5",
+    day: "7th Nov - Day 5",
     code: "U5-03",
     name: "FusionBeat - Music Mashup Battle",
     time: "16:30–18:00",
@@ -366,7 +366,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/TfV5PyUhQBFYrEiz7"
   },
   {
-    day: "Day 5",
+    day: "7th Nov - Day 5",
     code: "U5-04",
     name: "Frame the Future - Short Film Challenge",
     time: "10:00–17:00",
@@ -383,7 +383,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/oaD2DHZmoEofTgAW9"
   },
   {
-    day: "Day 6",
+    day: "7th Nov - Day 5",
     code: "U6-01",
     name: "Power Surge - Push-Up Challenge",
     time: "08:00–09:00",
@@ -400,7 +400,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/BMPwHG7zZpHkhDg19"
   },
   {
-    day: "Day 1",
+    day: "3rd Nov - Day 1",
     code: "U1-06",
     name: "InnovateX - Workshop Series",
     time: "10:00–16:00",
@@ -417,7 +417,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/DYftBze1xtKX6ZYbA"
   },
   {
-    day: "Day 2",
+    day: "4th Nov - Day 2",
     code: "U2-05",
     name: "ProtoVerse - Project Exhibition",
     time: "10:00–16:00",
@@ -434,7 +434,7 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/miKbJ7H8scnhaHiF8"
   },
   {
-    day: "Day 6",
+    day: "7th Nov - Day 5",
     code: "U6-02",
     name: "Tech Talk - Innovation Symposium",
     time: "14:00–16:00",
@@ -450,7 +450,7 @@ export const umuOnlyEvents: Event[] = [
     category: "umu-only"
   },
   {
-    day: "Day 6",
+    day: "7th Nov - Day 5",
     code: "U6-03",
     name: "Closing Ceremony & Prize Distribution",
     time: "17:00–19:00",
