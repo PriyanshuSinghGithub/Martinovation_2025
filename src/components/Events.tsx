@@ -17,7 +17,7 @@ interface EventCardProps {
 
 const prizePools: Record<string, string> = {
   "BitShift - Hackathon": "₹40,000",
-  "WebVerse - Web Development Sprint": "₹10,000",
+  "WebVerse - Web Development": "₹10,000",
   "BattleVerse - BGMI": "₹10,000 + in-game rewards",
   "BattleVerse - FF Max": "₹10,000 + in-game rewards",
 };
