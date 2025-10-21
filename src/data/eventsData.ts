@@ -70,7 +70,7 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/Ea4eXJvvf3UHP6oA8"
   },
   {
-    day: "4th Nov - Day 2",
+    day: "5th Nov - Day 3",
     code: "I2-02",
     name: "WebVerse - Web Development",
     time: "10:00–15:00",
