@@ -25,7 +25,7 @@ export const intercollegeEvents: Event[] = [
     day: "3rd Nov - Day 1",
     code: "I1-01",
     name: "BitShift - Hackathon",
-    time: "11:00AM–12:00PM",
+    time: "11:00AM–11:00AM",
     venue: "Computer Lab & Open Spaces",
     description: "Building the future, one idea at a time. 24-hour intensive coding competition where teams build innovative solutions to real-world problems.",
     entryFee: "499 per team",
