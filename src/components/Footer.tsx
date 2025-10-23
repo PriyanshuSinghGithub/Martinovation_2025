@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gradient-to-b from-[#0A2540] to-[#1A1A1A] border-t border-[#00D4FF]/30 py-10">
@@ -20,7 +20,7 @@ const Footer = () => {
           </span>
 
           <p className="text-gray-400 text-center max-w-2xl">
-            Genesis of Tomorrow — Where Innovation Meets Imagination
+            Genesis of Tomorrow - Where Innovation Meets Imagination
           </p>
 
           <div className="flex items-center space-x-2 text-gray-300">
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           <div className="text-gray-500 text-sm">
-            © {currentYear} Usha Martin University | Genesis of Tomorrow
+            © Usha Martin University
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
