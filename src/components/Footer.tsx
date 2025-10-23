@@ -33,7 +33,7 @@ const Footer = () => {
             © Usha Martin University
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+          {/* <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
             <a
               href="#home"
               className="hover:text-[#00D4FF] transition-colors duration-300"
@@ -64,7 +64,7 @@ const Footer = () => {
             >
               Contact
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
