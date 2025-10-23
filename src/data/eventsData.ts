@@ -163,7 +163,7 @@ export const umuOnlyEvents: Event[] = [
     description: "Endurance of logic meets evolution of code. Coding marathon testing your programming endurance and problem-solving skills.",
     entryFee: "Free",
     slot: "UMU Students Only",
-    team: "2 person",
+    team: "1 person",
     prizes: "Medals + Certificates",
     participantRequirements: "Programming knowledge, logical thinking, endurance.",
     organizerProvides: "Problem sets, online IDE access, timers, judges.",

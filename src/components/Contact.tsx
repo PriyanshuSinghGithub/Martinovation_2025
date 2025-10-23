@@ -85,7 +85,7 @@ const Contact = () => {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://www.linkedin.com/in/martinovation-umu-00bb7338a/"
+                  href="https://www.linkedin.com/company/martinovation-techfest/about/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-[#0A66C2]/20 flex items-center justify-center text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-300"
