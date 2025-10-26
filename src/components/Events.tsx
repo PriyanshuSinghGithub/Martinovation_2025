@@ -7,8 +7,15 @@ import {
   ExternalLink,
   Globe,
   School,
-} from "lucide-react";
+} from "lucide-react"; // 🧩 Removed Mic to fix the import error
 import { intercollegeEvents, umuOnlyEvents, Event } from "../data/eventsData";
+
+// 🧠 Speaker posters (just images — no name/title)
+const speakers = [
+  { image: "/images/speakers/ankit.jpg" },
+  { image: "/images/speakers/ishaa.jpg" },
+  { image: "/images/speakers/sanat.jpg" },
+];
 
 interface EventCardProps {
   event: Event;
@@ -22,7 +29,6 @@ const prizePools: Record<string, string> = {
   "BattleVerse - FF Max": "₹10,000 + in-game rewards",
 };
 
-// Get registration link from event data or fallback
 const getRegistrationLink = (event: Event): string => {
   return event.registrationLink || "#contact";
 };
@@ -33,12 +39,10 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
 
   const handleRegister = () => {
     if (registrationLink.startsWith("#")) {
-      // Internal link
       document
         .querySelector(registrationLink)
         ?.scrollIntoView({ behavior: "smooth" });
     } else {
-      // External link
       window.open(registrationLink, "_blank");
     }
   };
@@ -68,19 +72,19 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2 mb-3">
           <div className="flex items-center text-gray-400 text-xs">
-            <Calendar className="w-3 h-3 mr-1 text-[#00D4FF] flex-shrink-0" />
+            <Calendar className="w-3 h-3 mr-1 text-[#00D4FF]" />
             <span>{event.day}</span>
           </div>
           <div className="flex items-center text-gray-400 text-xs">
-            <MapPin className="w-3 h-3 mr-1 text-[#00D4FF] flex-shrink-0" />
+            <MapPin className="w-3 h-3 mr-1 text-[#00D4FF]" />
             <span className="truncate">{event.venue}</span>
           </div>
           <div className="flex items-center text-gray-400 text-xs">
-            <Users className="w-3 h-3 mr-1 text-[#00D4FF] flex-shrink-0" />
+            <Users className="w-3 h-3 mr-1 text-[#00D4FF]" />
             <span>{event.team}</span>
           </div>
           <div className="flex items-center text-gray-400 text-xs">
-            <IndianRupee className="w-3 h-3 mr-1 text-[#00D4FF] flex-shrink-0" />
+            <IndianRupee className="w-3 h-3 mr-1 text-[#00D4FF]" />
             <span className="font-semibold text-[#FFD700]">
               {event.entryFee}
             </span>
@@ -100,7 +104,6 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
           </span>
         </div>
 
-        {/* Action Buttons */}
         <div className="flex gap-2">
           <button
             onClick={handleRegister}
@@ -178,7 +181,7 @@ const Events = () => {
           Choose your competition level and showcase your skills
         </p>
 
-        {/* Tab Navigation */}
+        {/* Tabs */}
         <div className="flex justify-center mb-8 md:mb-12 px-4">
           <div className="bg-[#1A1A1A] p-1 md:p-2 rounded-xl border border-[#00D4FF]/30 inline-flex">
             <div className="flex flex-col sm:flex-row gap-0">
@@ -191,9 +194,8 @@ const Events = () => {
                 }`}
               >
                 <Globe className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2" />
-                <span className="hidden sm:inline">Intercollege Events</span>
-                <span className="sm:hidden">Intercollege</span>
-                <span className="ml-1 md:ml-2 px-1 md:px-2 py-0.5 md:py-1 bg-[#00D4FF]/20 text-[#00D4FF] text-xs rounded-full">
+                Intercollege
+                <span className="ml-2 px-2 py-0.5 bg-[#00D4FF]/20 text-[#00D4FF] text-xs rounded-full">
                   {intercollegeEvents.length}
                 </span>
               </button>
@@ -206,41 +208,13 @@ const Events = () => {
                 }`}
               >
                 <School className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2" />
-                <span className="hidden sm:inline">UMU Only Events</span>
-                <span className="sm:hidden">UMU Only</span>
-                <span className="ml-1 md:ml-2 px-1 md:px-2 py-0.5 md:py-1 bg-[#7B2CBF]/20 text-[#7B2CBF] text-xs rounded-full">
+                UMU Only
+                <span className="ml-2 px-2 py-0.5 bg-[#7B2CBF]/20 text-[#7B2CBF] text-xs rounded-full">
                   {umuOnlyEvents.length}
                 </span>
               </button>
             </div>
           </div>
-        </div>
-
-        {/* Event Description */}
-        <div className="text-center mb-6 md:mb-8 px-4">
-          {activeTab === "intercollege" ? (
-            <div className="bg-gradient-to-r from-[#00D4FF]/10 to-[#7B2CBF]/10 p-4 md:p-6 rounded-xl border border-[#00D4FF]/30">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 flex items-center justify-center">
-                <Globe className="w-5 h-5 md:w-6 md:h-6 mr-2 text-[#00D4FF]" />
-                Intercollege Events
-              </h3>
-              <p className="text-gray-300 text-sm md:text-lg">
-                Open to all colleges and universities. Compete with the best
-                minds across institutions and win exciting prizes!
-              </p>
-            </div>
-          ) : (
-            <div className="bg-gradient-to-r from-[#7B2CBF]/10 to-[#00D4FF]/10 p-4 md:p-6 rounded-xl border border-[#7B2CBF]/30">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2 md:mb-3 flex items-center justify-center">
-                <School className="w-5 h-5 md:w-6 md:h-6 mr-2 text-[#7B2CBF]" />
-                UMU Only Events
-              </h3>
-              <p className="text-gray-300 text-sm md:text-lg">
-                Exclusive for Usha Martin University students. Build skills,
-                learn new technologies, and connect with peers!
-              </p>
-            </div>
-          )}
         </div>
 
         {/* Events Grid */}
@@ -262,6 +236,37 @@ const Events = () => {
             ))}
           </div>
         )}
+
+        {/* 🔊 Speaker Posters Section */}
+        <div id="speakers" className="mt-20 text-center">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 text-gradient">
+            Our Speakers
+          </h2>
+          <p className="text-gray-300 mb-10 text-lg">
+            Inspiring minds sharing their journey in tech and innovation
+          </p>
+
+          <div className="flex justify-center">
+            <div className="grid justify-center gap-6 px-6 w-full max-w-6xl grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
+              {[
+                { image: "/images/speakers/ankit.jpg" },
+                { image: "/images/speakers/ishaa.jpg" },
+                { image: "/images/speakers/sanat.jpg" },
+              ].map((speaker, index) => (
+                <div
+                  key={index}
+                  className="relative overflow-hidden rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+                >
+                  <img
+                    src={speaker.image}
+                    alt={`Speaker Poster ${index + 1}`}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
