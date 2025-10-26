@@ -77,7 +77,7 @@ export const intercollegeEvents: Event[] = [
     venue: "Computer Lab A",
     description: "Designing the digital dimension. Web development sprint to build responsive and innovative websites.",
     entryFee: "199 per team",
-    team: "3 person",
+    team: "1-3 person",
     prizes: "Cash Prizes: ₹10,000 (1st: ₹5,000, 2nd: ₹3,000, 3rd: ₹2,000) + Medals + Certificates",
     participantRequirements: "HTML, CSS, JavaScript knowledge, design skills.",
     organizerProvides: "Theme/requirements, internet access, hosting platform, judges.",
