@@ -25,8 +25,8 @@ export const intercollegeEvents: Event[] = [
     day: "3rd Nov - Day 1",
     code: "I1-01",
     name: "BitShift - Hackathon",
-    time: "11:00AM–11:00AM",
-    venue: "Computer Lab & Open Spaces",
+    time: "12:00PM (Day 1) – 12:00PM (Day 2)", // Updated Time
+    venue: "3rd Floor, Baitarani", // Updated Venue
     description: "Building the future, one idea at a time. 24-hour intensive coding competition where teams build innovative solutions to real-world problems.",
     entryFee: "499 per team",
     team: "2-4 person",
@@ -41,8 +41,8 @@ export const intercollegeEvents: Event[] = [
     day: "3rd Nov - Day 1",
     code: "I1-02",
     name: "Rise of Machines - Robotics Challenge",
-    time: "10:30–13:00",
-    venue: "Volleyball court ground (exhibition zone)",
+    time: "10:30AM – 12:00PM", // Updated Time
+    venue: "Volleyball court", // Venue confirmed
     description: "Where intelligence takes physical form. Teams design and program robots to perform specific tasks or compete in challenges.",
     entryFee: "Free",
     team: "2-3 person",
@@ -54,11 +54,11 @@ export const intercollegeEvents: Event[] = [
     registrationLink: "https://forms.gle/tTFrYFJyckqdrAiQ9"
   },
   {
-    day: "4th Nov - Day 2",
+    day: "4th Nov - Day 2", // Day confirmed from table context
     code: "I2-01",
     name: "SkyNova - Drone Racing",
-    time: "10:00–12:00",
-    venue: "Open Ground",
+    time: "10:00AM – 12:00PM", // Updated Time
+    venue: "Open Ground", // Venue confirmed
     description: "Race through the skies of tomorrow. Drone racing through obstacle courses with time-based scoring.",
     entryFee: "Free",
     team: "Individual",
@@ -73,8 +73,8 @@ export const intercollegeEvents: Event[] = [
     day: "5th Nov - Day 3",
     code: "I2-02",
     name: "WebVerse - Web Development",
-    time: "10:00–15:00",
-    venue: "Computer Lab A",
+    time: "10:00AM – 02:00PM", // Updated Time (from 15:00)
+    venue: "Computer lab", // Updated Venue (from Computer Lab A)
     description: "Designing the digital dimension. Web development sprint to build responsive and innovative websites.",
     entryFee: "199 per team",
     team: "1-3 person",
@@ -89,8 +89,8 @@ export const intercollegeEvents: Event[] = [
     day: "5th Nov - Day 3",
     code: "I3-01",
     name: "ChronoVerse - Cosplay Competition",
-    time: "12:30–14:00",
-    venue: "Open Ground",
+    time: "12:30PM – 02:00PM", // Time confirmed
+    venue: "Open Ground", // Venue confirmed
     description: "Step into the worlds beyond time. Cosplay competition showcasing character design and performance.",
     entryFee: "Free",
     team: "Individual",
@@ -105,8 +105,8 @@ export const intercollegeEvents: Event[] = [
     day: "5th Nov - Day 3",
     code: "I3-02",
     name: "MechaRush - Robot Racing",
-    time: "14:00–16:00",
-    venue: "Volleyball court ground",
+    time: "02:00PM – 04:00PM", // Updated Time (from 14:00–16:00)
+    venue: "Open Ground", // Updated Venue (from Volleyball court ground)
     description: "The ultimate race of mechanical marvels. High-speed robot racing competition with obstacle courses.",
     entryFee: "Free",
     team: "2 person",
@@ -121,8 +121,8 @@ export const intercollegeEvents: Event[] = [
     day: "6th Nov - Day 4",
     code: "I4-01",
     name: "BattleVerse - BGMI",
-    time: "10:00–14:00",
-    venue: "Gaming Zone (Student Center)",
+    time: "10:00AM – 01:00PM", // Updated Time
+    venue: "Central Mess", // Updated Venue (from Gaming Zone (Student Center))
     description: "The battleground of legends. BGMI Battle Royale tournament with competitive gameplay.",
     entryFee: "99 per team",
     team: "4 person",
@@ -137,8 +137,8 @@ export const intercollegeEvents: Event[] = [
     day: "6th Nov - Day 4",
     code: "I4-02",
     name: "BattleVerse - FF Max",
-    time: "11:00–15:00",
-    venue: "Gaming Zone (Student Center)",
+    time: "12:00PM – 03:00PM", // Updated Time
+    venue: "Central Mess", // Updated Venue (from Gaming Zone (Student Center))
     description: "Ignite your spirit. Dominate the arena. Free Fire Max competitive gaming tournament.",
     entryFee: "99 per team",
     team: "4 person",
@@ -158,8 +158,8 @@ export const umuOnlyEvents: Event[] = [
     day: "3rd Nov - Day 1",
     code: "U1-02",
     name: "FutureScript - Coding Marathon",
-    time: "10:00–15:00",
-    venue: "Computer Lab A",
+    time: "10:00AM – 11:30AM", // Updated Time (from 15:00)
+    venue: "Computer lab", // Updated Venue (from Computer Lab A)
     description: "Endurance of logic meets evolution of code. Coding marathon testing your programming endurance and problem-solving skills.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -176,8 +176,8 @@ export const umuOnlyEvents: Event[] = [
     day: "3rd Nov - Day 1",
     code: "U1-04",
     name: "TechQuest - Tech Quiz",
-    time: "14:00–16:00",
-    venue: "Auditorium",
+    time: "02:00PM – 04:00PM", // Time confirmed
+    venue: "Auditorium 2nd floor", // Updated Venue (from Auditorium)
     description: "Battle of the brightest minds in tech. Technology-focused quiz competition covering latest trends and innovations.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -190,11 +190,11 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/62KSrgAU9Fm9V7mt7"
   },
   {
-    day: "3rd Nov - Day 1",
+    day: "4th Nov - Day 2", // Updated Day (from Day 1)
     code: "U1-05",
     name: "MindForge - General Knowledge Quiz",
-    time: "16:30–18:00",
-    venue: "Seminar Hall",
+    time: "12:00PM – 02:00PM", // Updated Time (from 16:30–18:00)
+    venue: "Seminar hall Dassam", // Updated Venue (from Seminar Hall)
     description: "Sharpen your intellect beyond boundaries. General knowledge quiz testing diverse intellectual capabilities.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -211,8 +211,8 @@ export const umuOnlyEvents: Event[] = [
     day: "4th Nov - Day 2",
     code: "U2-02",
     name: "CodeCipher - Hack Puzzle",
-    time: "14:00–16:00",
-    venue: "Computer Lab B",
+    time: "02:00PM – 04:00PM", // Time confirmed
+    venue: "Computer lab B", // Venue confirmed
     description: "Decode. Defy. Dominate. Hack puzzle competition testing your problem-solving and cryptographic skills.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -226,11 +226,11 @@ export const umuOnlyEvents: Event[] = [
   },
 
   {
-    day: "4th Nov - Day 2",
+    day: "4th Nov - Day 2", // Day confirmed
     code: "U2-04",
     name: "NeuraWars - AI Bot Challenge",
-    time: "16:30–18:30",
-    venue: "AI Lab",
+    time: "10:00AM – 12:00PM", // Updated Time (from 16:30–18:30)
+    venue: "Computer lab", // Updated Venue (from AI Lab)
     description: "Where bots think, act, and conquer. AI bot challenge testing artificial intelligence and machine learning skills.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -246,8 +246,8 @@ export const umuOnlyEvents: Event[] = [
     day: "5th Nov - Day 3",
     code: "U3-01",
     name: "VisionSynth - AI Art Competition",
-    time: "10:00–14:00",
-    venue: "Art Studio",
+    time: "02:30PM – 04:00PM", // Updated Time (from 10:00–14:00)
+    venue: "Computer lab", // Updated Venue (from Art Studio)
     description: "When creativity meets computation. AI art competition showcasing the fusion of artificial intelligence and artistic creativity.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -260,11 +260,11 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/XLiBnC9w3xXuJLVo7"
   },
   {
-    day: "5th Nov - Day 3",
+    day: "6th Nov - Day 4", // Updated Day (from Day 3)
     code: "U3-02",
     name: "EchoMind - AI Music Composition",
-    time: "14:30–17:00",
-    venue: "Music Studio",
+    time: "02:00PM – 04:00PM", // Updated Time (from 14:30–17:00)
+    venue: "Computer lab", // Updated Venue (from Music Studio)
     description: "Tune into the rhythm of artificial intelligence. AI music composition challenge creating melodies with machine learning.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -277,11 +277,11 @@ export const umuOnlyEvents: Event[] = [
     registrationLink: "https://forms.gle/B8CMkySxLvTbQUui7"
   },
   {
-    day: "5th Nov - Day 3",
+    day: "6th Nov - Day 4", // Updated Day (from Day 3)
     code: "U3-03",
     name: "FutureFrame - AutoCAD Design Challenge",
-    time: "10:00–15:00",
-    venue: "Design Lab",
+    time: "02:00PM – 04:00PM", // Updated Time (from 10:00–15:00)
+    venue: "Computer lab", // Updated Venue (from Design Lab)
     description: "Designing structures for the new dawn. AutoCAD design competition showcasing architectural and engineering creativity.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -293,16 +293,12 @@ export const umuOnlyEvents: Event[] = [
     category: "umu-only",
     registrationLink: "https://forms.gle/KvU8HjocZHGVSZD2A"
   },
-
-
-
-
   {
     day: "6th Nov - Day 4",
     code: "U4-03",
     name: "MetaMeme - Meme Contest",
-    time: "16:00–17:30",
-    venue: "Auditorium",
+    time: "02:00PM – 04:00PM", // Updated Time (from 16:00–17:30)
+    venue: "Umu campus", // Updated Venue (from Auditorium)
     description: "Humor reborn in the digital age. Meme battle showcasing creativity and humor in digital format.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -318,8 +314,8 @@ export const umuOnlyEvents: Event[] = [
     day: "7th Nov - Day 5",
     code: "U5-01",
     name: "Pixel Rebirth - Photography Contest",
-    time: "10:00–16:00",
-    venue: "Photography Studio",
+    time: "10:00AM – 02:00PM", // Updated Time (from 10:00–16:00)
+    venue: "Umu campus", // Updated Venue (from Photography Studio)
     description: "Capturing the essence of tomorrow. Photography contest showcasing artistic vision and technical skills.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -335,8 +331,8 @@ export const umuOnlyEvents: Event[] = [
     day: "7th Nov - Day 5",
     code: "U5-02",
     name: "Eclipsera - Talent Show",
-    time: "14:00–16:00",
-    venue: "Main Stage",
+    time: "11:00AM – 02:00PM", // Updated Time (from 14:00–16:00)
+    venue: "Open ground", // Updated Venue (from Main Stage)
     description: "Where creativity eclipses limits. Talent show showcasing diverse artistic and performance skills.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -352,8 +348,8 @@ export const umuOnlyEvents: Event[] = [
     day: "7th Nov - Day 5",
     code: "U5-03",
     name: "FusionBeat - Music Mashup Battle",
-    time: "16:30–18:00",
-    venue: "Music Hall",
+    time: "12:00PM – 02:00PM", // Updated Time (from 16:30–18:00)
+    venue: "Auditorium", // Updated Venue (from Music Hall)
     description: "Where imagination meets innovation. Mashup battle combining different musical elements creatively.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -369,8 +365,8 @@ export const umuOnlyEvents: Event[] = [
     day: "7th Nov - Day 5",
     code: "U5-04",
     name: "Frame the Future - Short Film Challenge",
-    time: "10:00–17:00",
-    venue: "Media Lab",
+    time: "09:30AM – 03:30PM", // Updated Time (from 10:00–17:00)
+    venue: "Umu Campus", // Updated Venue (from Media Lab)
     description: "Visual stories for a new era. Short film challenge creating compelling narratives in limited time.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -386,8 +382,8 @@ export const umuOnlyEvents: Event[] = [
     day: "7th Nov - Day 5",
     code: "U6-01",
     name: "Power Surge - Push-Up Challenge",
-    time: "08:00–09:00",
-    venue: "Fitness Center",
+    time: "10:00AM – 11:00AM", // Updated Time (from 08:00–09:00)
+    venue: "Open ground", // Updated Venue (from Fitness Center)
     description: "Strength of body, spark of spirit. Push-up challenge testing physical endurance and mental determination.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -403,8 +399,8 @@ export const umuOnlyEvents: Event[] = [
     day: "3rd Nov - Day 1",
     code: "U1-06",
     name: "InnovateX - Workshop Series",
-    time: "10:00–16:00",
-    venue: "Seminar Hall",
+    time: "02:30PM – 04:00PM", // Updated Time (from 10:00–16:00)
+    venue: "Seminar Hall Batarani", // Updated Venue (from Seminar Hall)
     description: "Learn. Build. Evolve. Comprehensive workshops covering latest technologies and industry trends.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -420,8 +416,8 @@ export const umuOnlyEvents: Event[] = [
     day: "4th Nov - Day 2",
     code: "U2-05",
     name: "ProtoVerse - Project Exhibition",
-    time: "10:00–16:00",
-    venue: "Exhibition Hall",
+    time: "10:00AM – 12:00PM", // Updated Time (from 10:00–16:00)
+    venue: "Open ground", // Updated Venue (from Exhibition Hall)
     description: "Showcasing the prototypes of tomorrow. Project exhibition displaying innovative student projects and research work.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -437,8 +433,8 @@ export const umuOnlyEvents: Event[] = [
     day: "7th Nov - Day 5",
     code: "U6-02",
     name: "Tech Talk - Innovation Symposium",
-    time: "14:00–16:00",
-    venue: "Main Auditorium",
+    time: "02:00PM – 03:00PM", // Updated Time (from 14:00–16:00)
+    venue: "Seminar hall", // Updated Venue (from Main Auditorium)
     description: "Conversations that shape the genesis of innovation. Expert talks on cutting-edge technologies and future trends.",
     entryFee: "Free",
     slot: "UMU Students Only",
@@ -453,8 +449,8 @@ export const umuOnlyEvents: Event[] = [
     day: "7th Nov - Day 5",
     code: "U6-03",
     name: "Closing Ceremony & Prize Distribution",
-    time: "17:00–19:00",
-    venue: "Main Auditorium",
+    time: "03:00PM – 04:30PM", // Updated Time (from 17:00–19:00)
+    venue: "Central Mess", // Updated Venue (from Main Auditorium)
     description: "Grand finale with cultural performances, prize distribution, and closing remarks.",
     entryFee: "Free",
     slot: "UMU Students Only",
