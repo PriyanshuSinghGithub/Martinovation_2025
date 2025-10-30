@@ -150,7 +150,7 @@ const Sponsors = () => {
               href="tel:8674944887"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#FFD700] to-[#00D4FF] text-[#0A2540] rounded-lg font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
-              Contact Umanand Mishra: 8674944887
+              Contact Kritty Samixha : 9142394254
             </a>
           </div>
         </div>
