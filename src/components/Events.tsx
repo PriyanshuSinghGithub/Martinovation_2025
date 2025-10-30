@@ -12,6 +12,7 @@ import { intercollegeEvents, umuOnlyEvents, Event } from "../data/eventsData";
 
 // 🧠 Speaker posters (just images — no name/title)
 const speakers = [
+  { image: "/images/speakers/Kritty.jpg" },
   { image: "/images/speakers/ankit.jpg" },
   { image: "/images/speakers/ishaa.jpg" },
   { image: "/images/speakers/sanat.jpg" },
@@ -249,6 +250,7 @@ const Events = () => {
           <div className="flex justify-center">
             <div className="grid justify-center gap-6 px-6 w-full max-w-6xl grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
               {[
+                { image: "/images/speakers/kritty.jpg" },
                 { image: "/images/speakers/ankit.jpg" },
                 { image: "/images/speakers/ishaa.jpg" },
                 { image: "/images/speakers/sanat.jpg" },
