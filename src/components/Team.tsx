@@ -71,6 +71,11 @@ const departments: Department[] = [
     coordinators: [],
   },
   {
+    name: 'Sponsorship & Marketing',
+    head: { name: 'Kritty Samixha', contact: '9142394254' },
+    coordinators: [{ name: 'Umanand Mishra', contact: '8674944887' }],
+  },
+  {
     name: 'Web Design & Development',
     head: { name: 'Priyanshu Kr. Singh', contact: '6205133276' },
     coordinators: [{ name: 'Bhaskar Talukder', contact: '8293744474' }],
