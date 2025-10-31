@@ -7,10 +7,11 @@ import {
   ExternalLink,
   Globe,
   School,
-} from "lucide-react"; // 🧩 Removed Mic to fix the import error
+  X,
+} from "lucide-react";
 import { intercollegeEvents, umuOnlyEvents, Event } from "../data/eventsData";
 
-// 🧠 Speaker posters (just images — no name/title)
+// speaker posters
 const speakers = [
   { image: "/images/speakers/Kritty.jpg" },
   { image: "/images/speakers/ankit.jpg" },
@@ -49,8 +50,10 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#1A1A1A] to-[#0A2540] rounded-xl border border-[#00D4FF]/30 hover:border-[#7B2CBF] transition-all duration-300 overflow-hidden">
-      <div className="p-4">
+    // relative + overflow-hidden so the expanded panel can overlay without changing grid height
+    <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#0A2540] rounded-xl border border-[#00D4FF]/30 hover:border-[#7B2CBF] transition-all duration-300 overflow-hidden h-[430px] flex flex-col">
+      {/* main card content */}
+      <div className="p-4 flex flex-col flex-grow">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3">
           <div className="flex-1 mb-2 sm:mb-0 sm:pr-2">
             <h3 className="text-base md:text-lg font-bold text-white mb-1 leading-tight">
@@ -91,7 +94,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
             </span>
           </div>
           {prizePools[event.name] && (
-            <div className="flex items-center text-gray-300 text-xs mt-1">
+            <div className="flex items-center text-gray-300 text-xs mt-1 col-span-1 sm:col-span-2">
               <span className="font-semibold text-[#FFD700]">
                 Prize Pool: {prizePools[event.name]}
               </span>
@@ -105,7 +108,8 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
           </span>
         </div>
 
-        <div className="flex gap-2">
+        {/* buttons sit at the bottom of the card content area */}
+        <div className="flex gap-2 mt-auto">
           <button
             onClick={handleRegister}
             className="flex-1 px-3 py-2 bg-gradient-to-r from-[#00D4FF] to-[#7B2CBF] text-white rounded-lg font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center justify-center text-sm"
@@ -114,52 +118,75 @@ const EventCard: React.FC<EventCardProps> = ({ event, isIntercollege }) => {
             REGISTER
           </button>
           <button
-            onClick={() => setIsExpanded(!isExpanded)}
+            onClick={() => setIsExpanded(true)}
             className="px-3 py-2 border-2 border-[#00D4FF] text-[#00D4FF] rounded-lg font-semibold hover:bg-[#00D4FF] hover:text-white transition-all duration-300 text-sm"
           >
-            {isExpanded ? "Less" : "More"}
+            More
           </button>
         </div>
-
-        {isExpanded && (
-          <div className="pt-3 mt-3 border-t border-[#00D4FF]/20">
-            <div className="space-y-2">
-              {event.prizes && (
-                <div>
-                  <h4 className="text-white font-semibold mb-1 text-sm">
-                    Prizes:
-                  </h4>
-                  <p className="text-gray-300 text-xs">{event.prizes}</p>
-                </div>
-              )}
-              <div>
-                <h4 className="text-white font-semibold mb-1 text-sm">
-                  Requirements:
-                </h4>
-                <p className="text-gray-300 text-xs">
-                  {event.participantRequirements}
-                </p>
-              </div>
-              <div>
-                <h4 className="text-white font-semibold mb-1 text-sm">
-                  We Provide:
-                </h4>
-                <p className="text-gray-300 text-xs">
-                  {event.organizerProvides}
-                </p>
-              </div>
-              {event.preparation && (
-                <div>
-                  <h4 className="text-white font-semibold mb-1 text-sm">
-                    Event Setup:
-                  </h4>
-                  <p className="text-gray-300 text-xs">{event.preparation}</p>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Absolute overlay for expanded details - does NOT change layout height */}
+      {isExpanded && (
+        <div className="absolute inset-0 z-30 flex flex-col p-4 bg-black/80 backdrop-blur-sm">
+          <div className="flex items-start justify-between gap-4">
+            <h4 className="text-white font-semibold text-lg">{event.name}</h4>
+            <button
+              onClick={() => setIsExpanded(false)}
+              className="p-1 rounded-full border border-[#00D4FF]/40 text-[#00D4FF] hover:bg-[#00D4FF] hover:text-white transition"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+
+          <div className="mt-3 flex-1 overflow-y-auto pr-2 space-y-4">
+            {event.prizes && (
+              <div>
+                <h5 className="text-white font-semibold mb-1">Prizes:</h5>
+                <p className="text-gray-300 text-sm">{event.prizes}</p>
+              </div>
+            )}
+
+            <div>
+              <h5 className="text-white font-semibold mb-1">Requirements:</h5>
+              <p className="text-gray-300 text-sm">
+                {event.participantRequirements}
+              </p>
+            </div>
+
+            <div>
+              <h5 className="text-white font-semibold mb-1">We Provide:</h5>
+              <p className="text-gray-300 text-sm">{event.organizerProvides}</p>
+            </div>
+
+            {/* {event.preparation && (
+              <div>
+                <h5 className="text-white font-semibold mb-1">Event Setup:</h5>
+                <p className="text-gray-300 text-sm">{event.preparation}</p>
+              </div>
+            )} */}
+          </div>
+
+          <div className="mt-4 flex gap-2">
+            <button
+              onClick={() => {
+                handleRegister();
+                setIsExpanded(false);
+              }}
+              className="flex-1 px-3 py-2 bg-gradient-to-r from-[#00D4FF] to-[#7B2CBF] text-white rounded-lg font-bold hover:shadow-lg transition-all duration-300 flex items-center justify-center text-sm"
+            >
+              <ExternalLink className="w-3 h-3 mr-1" />
+              REGISTER
+            </button>
+            <button
+              onClick={() => setIsExpanded(false)}
+              className="px-3 py-2 border-2 border-[#00D4FF] text-[#00D4FF] rounded-lg font-semibold hover:bg-[#00D4FF] hover:text-white transition-all duration-300 text-sm"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -220,17 +247,19 @@ const Events = () => {
 
         {/* Events Grid */}
         {activeTab === "intercollege" ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-3 px-4 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 px-4 items-stretch">
             {intercollegeEvents.map((event, index) => (
-              <EventCard key={index} event={event} isIntercollege={true} />
+              <div key={index} className="flex">
+                <EventCard event={event} isIntercollege={true} />
+              </div>
             ))}
           </div>
         ) : (
-          <div className="flex flex-wrap justify-center gap-2 md:gap-3 px-4">
+          <div className="flex flex-wrap justify-center gap-4 px-4">
             {umuOnlyEvents.map((event, index) => (
               <div
                 key={index}
-                className="w-full sm:w-[calc(50%-0.25rem)] lg:w-[calc(33.333%-0.5rem)] max-w-sm"
+                className="w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.666rem)] max-w-sm flex"
               >
                 <EventCard event={event} isIntercollege={false} />
               </div>
@@ -238,7 +267,7 @@ const Events = () => {
           </div>
         )}
 
-        {/* 🔊 Speaker Posters Section */}
+        {/* Speakers */}
         <div id="speakers" className="mt-20 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 text-gradient">
             Our Speakers
@@ -249,12 +278,7 @@ const Events = () => {
 
           <div className="flex justify-center">
             <div className="grid justify-center gap-6 px-6 w-full max-w-6xl grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
-              {[
-                { image: "/images/speakers/kritty.jpg" },
-                { image: "/images/speakers/ankit.jpg" },
-                { image: "/images/speakers/ishaa.jpg" },
-                { image: "/images/speakers/sanat.jpg" },
-              ].map((speaker, index) => (
+              {speakers.map((speaker, index) => (
                 <div
                   key={index}
                   className="relative overflow-hidden rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
