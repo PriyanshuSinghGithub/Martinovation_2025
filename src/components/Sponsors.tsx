@@ -9,6 +9,7 @@ const sponsorLogos = [
   { name: "Gaming Partner", logo: "/images/sponsor/jiogames-logo.png" },
   { name: "Weebs India", logo: "/images/sponsor/Weebs-logo.jpg" },
   { name: "TMR E-Sports", logo: "/images/sponsor/TMR-logo.jpg" },
+  { name: "Codestam Technologies", logo: "/images/sponsor/codestam.jpg" },
 ];
 
 // Community Partners
