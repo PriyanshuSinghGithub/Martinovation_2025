@@ -13,7 +13,7 @@ import { intercollegeEvents, umuOnlyEvents, Event } from "../data/eventsData";
 
 // speaker posters
 const speakers = [
-  { image: "/images/speakers/Kritty.jpg" },
+  { image: "/images/speakers/kritty.jpg" },
   { image: "/images/speakers/ankit.jpg" },
   { image: "/images/speakers/ishaa.jpg" },
   { image: "/images/speakers/sanat.jpg" },
